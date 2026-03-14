@@ -1,0 +1,114 @@
+IPA summary for HwIoAb_Leds_TurnToggle/2 is missing.
+IPA summary for HwIoAb_Leds_TurnOff/1 is missing.
+IPA summary for HwIoAb_Leds_TurnOn/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+node context cache: 0 hits, 0 misses, 0 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        3 calls, 3.000000 freq, 0 count
+IPA summary for HwIoAb_Leds_TurnToggle/2 is missing.
+IPA summary for HwIoAb_Leds_TurnOff/1 is missing.
+IPA summary for HwIoAb_Leds_TurnOn/0 is missing.
+Symbol table:
+
+Dio_FlipChannel/4 (Dio_FlipChannel) @069c2700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Leds_TurnToggle/2 
+  Calls: 
+Dio_WriteChannel/3 (Dio_WriteChannel) @069c2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Leds_TurnOff/1 HwIoAb_Leds_TurnOn/0 
+  Calls: 
+HwIoAb_Leds_TurnToggle/2 (HwIoAb_Leds_TurnToggle) @069c2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_FlipChannel/4 
+HwIoAb_Leds_TurnOff/1 (HwIoAb_Leds_TurnOff) @069bbe00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/3 
+HwIoAb_Leds_TurnOn/0 (HwIoAb_Leds_TurnOn) @069bb380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/3 
+
+;; Function HwIoAb_Leds_TurnOn (HwIoAb_Leds_TurnOn, funcdef_no=0, decl_uid=5233, cgraph_uid=1, symbol_order=0)
+
+HwIoAb_Leds_TurnOn (uint8 Led)
+{
+  short unsigned int _1;
+
+  <bb 2> :
+  _1 = (short unsigned int) Led_2(D);
+  Dio_WriteChannel (_1, 1);
+  return;
+
+}
+
+
+
+;; Function HwIoAb_Leds_TurnOff (HwIoAb_Leds_TurnOff, funcdef_no=1, decl_uid=5235, cgraph_uid=2, symbol_order=1)
+
+HwIoAb_Leds_TurnOff (uint8 Led)
+{
+  short unsigned int _1;
+
+  <bb 2> :
+  _1 = (short unsigned int) Led_2(D);
+  Dio_WriteChannel (_1, 0);
+  return;
+
+}
+
+
+
+;; Function HwIoAb_Leds_TurnToggle (HwIoAb_Leds_TurnToggle, funcdef_no=2, decl_uid=5237, cgraph_uid=3, symbol_order=2)
+
+HwIoAb_Leds_TurnToggle (uint8 Led)
+{
+  short unsigned int _1;
+
+  <bb 2> :
+  _1 = (short unsigned int) Led_2(D);
+  Dio_FlipChannel (_1);
+  return;
+
+}
+
+

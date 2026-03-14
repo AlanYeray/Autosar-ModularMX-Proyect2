@@ -1,0 +1,1311 @@
+Trivially needed symbols: Bfx_CountLeadingZeros_u32/24 Bfx_CountLeadingSigns_s32/23 Bfx_CountLeadingOnes_u32/22 Bfx_ShiftBitSat_s32s8_s32/21 Bfx_ShiftBitSat_u32s8_u32/20 Bfx_PutBit_u32u8u8/19 Bfx_PutBitsMask_u32u32u32/18 Bfx_PutBits_u32u8u8u8/17 Bfx_CopyBit_u32u8u32u8/16 Bfx_RotBitLt_u32u8/15 Bfx_RotBitRt_u32u8/14 Bfx_ShiftBitLt_u32u8/13 Bfx_ShiftBitRt_u32u8/12 Bfx_ToggleBitMask_u32u32/11 Bfx_ToggleBits_u32/10 Bfx_TstParityEven_u32_u8/9 Bfx_TstBitLnMask_u32u32_u8/8 Bfx_TstBitMask_u32u32_u8/7 Bfx_ClrBitMask_u32u32/6 Bfx_SetBitsMask_u32u32/5 Bfx_GetBits_u32u8u8_u8/4 Bfx_SetBits_u32u8u8u8/3 Bfx_GetBit_u32u8_u8/2 Bfx_ClrBit_u32u8/1 Bfx_SetBit_u32u8/0
+
+
+Initial Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0689dc40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0689d9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0689d700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0689d460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0689d1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06898d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068987e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068982a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06898ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06898c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068989a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06898700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06898460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068981c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06882d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068827e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068822a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06882ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06882c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068829a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06882700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06882460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068821c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0687eee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_CountLeadingZeros_u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_CountLeadingSigns_s32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_CountLeadingOnes_u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ShiftBitSat_s32s8_s32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ShiftBitSat_u32s8_u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_PutBit_u32u8u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_PutBitsMask_u32u32u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_PutBits_u32u8u8u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_CopyBit_u32u8u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_RotBitLt_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_RotBitRt_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ShiftBitLt_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ShiftBitRt_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ToggleBitMask_u32u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ToggleBits_u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_TstParityEven_u32_u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_TstBitLnMask_u32u32_u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_TstBitMask_u32u32_u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ClrBitMask_u32u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_SetBitsMask_u32u32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_GetBits_u32u8u8_u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_SetBits_u32u8u8u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_GetBit_u32u8_u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_ClrBit_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Bfx_SetBit_u32u8 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

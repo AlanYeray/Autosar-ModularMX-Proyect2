@@ -1,0 +1,576 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Det_Start/24 Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Det_Init/16
+
+
+Marking externally visible variables: Det_RuntimeModuleId/15 Det_ModuleId/14 Det_TransientModuleId/13 Det_TransientFaultId/12 Det_TransientApiId/11 Det_TransientInstanceId/10 Det_RuntimeErrorId/9 Det_RuntimeApiId/8 Det_RuntimeInstanceId/7 Det_ErrorId/6 Det_ApiId/5 Det_InstanceId/4 Det_Handler_static/3 Dio_Det_Handler_dinamic/2 Port_Det_Handler_dinamic/1
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: available
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: available
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: available
+  Varpool flags: initialized
+Det_Start ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+Det_ReportTransientFault (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 FaultId)
+{
+  uint32 u32CoreId;
+  Std_ReturnType D.6413;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_TransientModuleId[u32CoreId] = ModuleId;
+  Det_TransientInstanceId[u32CoreId] = InstanceId;
+  Det_TransientApiId[u32CoreId] = ApiId;
+  Det_TransientFaultId[u32CoreId] = FaultId;
+  D.6413 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6413;
+
+}
+
+
+Det_ReportRuntimeError (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+{
+  uint32 u32CoreId;
+  Std_ReturnType D.6411;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_RuntimeModuleId[u32CoreId] = ModuleId;
+  Det_RuntimeInstanceId[u32CoreId] = InstanceId;
+  Det_RuntimeApiId[u32CoreId] = ApiId;
+  Det_RuntimeErrorId[u32CoreId] = ErrorId;
+  D.6411 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6411;
+
+}
+
+
+Det_ReportError (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+{
+  const char * errorStr;
+  const char * apiStr;
+  const char * instanceStr;
+  const char * moduleStr;
+  uint32 u32CoreId;
+  Std_ReturnType D.6409;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_ModuleId[u32CoreId] = ModuleId;
+  Det_InstanceId[u32CoreId] = InstanceId;
+  Det_ApiId[u32CoreId] = ApiId;
+  Det_ErrorId[u32CoreId] = ErrorId;
+  moduleStr = getModuleString (ModuleId);
+  _2 = (short unsigned int) InstanceId;
+  instanceStr = getInstanceString (ModuleId, _2);
+  _3 = (short unsigned int) ApiId;
+  apiStr = getApiString (_3, ModuleId);
+  _4 = (short unsigned int) ApiId;
+  _5 = (short unsigned int) ErrorId;
+  errorStr = getErrorString (_4, _5, ModuleId);
+  SEGGER_RTT_printf (0, "Report Error: %s | %s in function: %s with the error %s\n", moduleStr, instanceStr, apiStr, errorStr);
+  D.6409 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6409;
+
+}
+
+
+getErrorString (uint16_t ApiId, uint16_t ErrorId, uint16_t ModuleId)
+{
+  int i;
+  int i;
+  const char * D.6400;
+
+  <bb 2> :
+  if (ModuleId == 120)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  i = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  _1 = Dio_Det_Handler_dinamic[i].ApiId;
+  _2 = (short unsigned int) _1;
+  if (ApiId == _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  _3 = Dio_Det_Handler_dinamic[i].ErrorId;
+  _4 = (short unsigned int) _3;
+  if (ErrorId == _4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  D.6400 = Dio_Det_Handler_dinamic[i].cError;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 17>; [INV]
+
+  <bb 7> :
+  i = i + 1;
+
+  <bb 8> :
+  if (i <= 28)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 9> :
+  if (ModuleId == 124)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 10> :
+  i = 0;
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  _5 = Port_Det_Handler_dinamic[i].ApiId;
+  _6 = (short unsigned int) _5;
+  if (ApiId == _6)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  _7 = Port_Det_Handler_dinamic[i].ErrorId;
+  _8 = (short unsigned int) _7;
+  if (ErrorId == _8)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  D.6400 = Port_Det_Handler_dinamic[i].cError;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  i = i + 1;
+
+  <bb 15> :
+  if (i <= 16)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 16> :
+  D.6400 = "Unknown Error";
+
+  <bb 17> :
+<L19>:
+  return D.6400;
+
+}
+
+
+getApiString (uint16_t ApiId, uint16_t ModuleId)
+{
+  int i;
+  int i;
+  const char * D.6387;
+
+  <bb 2> :
+  if (ModuleId == 120)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _1 = Dio_Det_Handler_dinamic[i].ApiId;
+  _2 = (short unsigned int) _1;
+  if (ApiId == _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  D.6387 = Dio_Det_Handler_dinamic[i].cApi;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 15>; [INV]
+
+  <bb 6> :
+  i = i + 1;
+
+  <bb 7> :
+  if (i <= 28)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 8> :
+  if (ModuleId == 124)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 9> :
+  i = 0;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  _3 = Port_Det_Handler_dinamic[i].ApiId;
+  _4 = (short unsigned int) _3;
+  if (ApiId == _4)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  D.6387 = Port_Det_Handler_dinamic[i].cApi;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  i = i + 1;
+
+  <bb 13> :
+  if (i <= 16)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  D.6387 = "Unknown API";
+
+  <bb 15> :
+<L15>:
+  return D.6387;
+
+}
+
+
+getInstanceString (uint16_t ModuleId, uint16_t InstanceId)
+{
+  int i;
+  const char * D.6381;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = Det_Handler_static[i].ModuleId;
+  if (ModuleId == _1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _2 = Det_Handler_static[i].InstanceId;
+  _3 = (short unsigned int) _2;
+  if (InstanceId == _3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  D.6381 = Det_Handler_static[i].cInstance;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  i = i + 1;
+
+  <bb 7> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  D.6381 = "Unknown Instance";
+
+  <bb 9> :
+<L7>:
+  return D.6381;
+
+}
+
+
+getModuleString (uint16_t ModuleId)
+{
+  int i;
+  const char * D.6375;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Det_Handler_static[i].ModuleId;
+  if (ModuleId == _1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.6375 = Det_Handler_static[i].cModule;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  i = i + 1;
+
+  <bb 6> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  D.6375 = "Unknown Module";
+
+  <bb 8> :
+<L5>:
+  return D.6375;
+
+}
+
+
+Det_Init ()
+{
+  <bb 2> :
+  SEGGER_RTT_printf (0, "Det Init Ready\n");
+  return;
+
+}
+
+

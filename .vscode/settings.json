@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "bfx_8bits.h": "c",
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "bfx.h": "c",
+        "hwioab_0_buttons.h": "c"
+    }
+}

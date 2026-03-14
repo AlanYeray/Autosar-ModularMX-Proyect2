@@ -1,0 +1,90 @@
+Symbol table:
+
+Pwm_SetOutputToIdle/7 (Pwm_SetOutputToIdle) @065c9b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buzzer_Stop/5 
+  Calls: 
+Pwm_SetPeriodAndDuty/6 (Pwm_SetPeriodAndDuty) @065c99a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buzzer_Beep/4 
+  Calls: 
+HwIoAb_Buzzer_Stop/5 (HwIoAb_Buzzer_Stop) @065c9460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_SetOutputToIdle/7 
+HwIoAb_Buzzer_Beep/4 (HwIoAb_Buzzer_Beep) @065c91c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_SetPeriodAndDuty/6 
+HwIoAb_Buzzer_Init/3 (HwIoAb_Buzzer_Init) @065c5ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: BuzzerControl/2 (write) BuzzerControl/2 (write) Pwm_ConfigPtr/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+BuzzerControl/2 (BuzzerControl) @065c8090
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buzzer_Init/3 (write) HwIoAb_Buzzer_Init/3 (write) 
+  Availability: available
+  Varpool flags:
+Pwm_ConfigPtr/1 (Pwm_ConfigPtr) @065c8048
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buzzer_Init/3 (write) 
+  Availability: available
+  Varpool flags: initialized
+HwIoAb_Buzzer_Stop ()
+{
+  <bb 2> :
+  Pwm_SetOutputToIdle (0);
+  return;
+
+}
+
+
+HwIoAb_Buzzer_Beep (uint16 Tone)
+{
+  <bb 2> :
+  Pwm_SetPeriodAndDuty (0, Tone_2(D), 16384);
+  return;
+
+}
+
+
+HwIoAb_Buzzer_Init (const struct Buzzer_Config * Config)
+{
+  <bb 2> :
+  BuzzerControl[0].tone = 200;
+  BuzzerControl[1].tone = 100;
+  Pwm_ConfigPtr = Config_4(D);
+  return;
+
+}
+
+

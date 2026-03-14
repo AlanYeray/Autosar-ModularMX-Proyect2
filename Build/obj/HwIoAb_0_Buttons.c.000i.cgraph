@@ -1,0 +1,421 @@
+Trivially needed symbols: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_GetEvent/4 HwIoAb_Buttons_Init/3 stBtnMachine/2 GeneralControl/1 HwIoAb_Ptr/0
+
+
+Initial Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069ea460
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069ea000
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069e1620
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069dff78
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069dff30
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: available
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: available
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: stBtnMachine/2 GeneralControl/1 HwIoAb_Ptr/0
+Removing variables:
+
+Final Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.HwIoAb_Buttons_MainFunction (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.HwIoAb_Buttons_GetEvent (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.HwIoAb_Buttons_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.stBtnMachine (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.GeneralControl (implicit_section)
+  Aux: @069dff78
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.HwIoAb_Ptr (implicit_section)
+  Aux: @069dff30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

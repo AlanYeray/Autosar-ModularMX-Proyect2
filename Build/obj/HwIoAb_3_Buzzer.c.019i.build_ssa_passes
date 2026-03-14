@@ -1,0 +1,29 @@
+HwIoAb_Buzzer_Stop ()
+{
+  <bb 2> :
+  Pwm_SetOutputToIdle (0);
+  return;
+
+}
+
+
+HwIoAb_Buzzer_Beep (uint16 Tone)
+{
+  <bb 2> :
+  Pwm_SetPeriodAndDuty (0, Tone, 16384);
+  return;
+
+}
+
+
+HwIoAb_Buzzer_Init (const struct Buzzer_Config * Config)
+{
+  <bb 2> :
+  BuzzerControl[0].tone = 200;
+  BuzzerControl[1].tone = 100;
+  Pwm_ConfigPtr = Config;
+  return;
+
+}
+
+

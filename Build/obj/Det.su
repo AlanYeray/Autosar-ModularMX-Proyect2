@@ -1,0 +1,9 @@
+Autosar/Det/src/Det.c:320:10:Det_Init	8	static
+Autosar/Det/src/Det.c:338:17:getModuleString	16	static
+Autosar/Det/src/Det.c:350:17:getInstanceString	16	static
+Autosar/Det/src/Det.c:365:17:getApiString	16	static
+Autosar/Det/src/Det.c:392:17:getErrorString	16	static
+Autosar/Det/src/Det.c:424:20:Det_ReportError	48	static
+Autosar/Det/src/Det.c:461:20:Det_ReportRuntimeError	24	static
+Autosar/Det/src/Det.c:488:20:Det_ReportTransientFault	24	static
+Autosar/Det/src/Det.c:511:10:Det_Start	0	static

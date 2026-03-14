@@ -1,0 +1,965 @@
+Bfx_CountLeadingZeros_u8 (uint8_t Data)
+{
+  uint8_t count;
+  uint8_t D.5444;
+  unsigned char count.10_1;
+  signed char Data.11_2;
+  uint8_t _9;
+
+  <bb 2> :
+  count_5 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.10_1 = count_4;
+  count_7 = count.10_1 + 1;
+  Data_8 = Data_3 << 1;
+
+  <bb 4> :
+  # Data_3 = PHI <Data_6(D)(2), Data_8(3)>
+  # count_4 = PHI <count_5(2), count_7(3)>
+  Data.11_2 = (signed char) Data_3;
+  if (Data.11_2 >= 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count_4 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _9 = count_4;
+
+  <bb 7> :
+<L4>:
+  return _9;
+
+}
+
+
+Bfx_CountLeadingSigns_u8 (int8_t Data)
+{
+  uint8_t count;
+  uint8_t msb;
+  uint8_t D.5441;
+  unsigned char Data.8_1;
+  unsigned char count.9_2;
+  int _3;
+  int _4;
+  signed char _5;
+  unsigned char _6;
+  int _7;
+  int _8;
+  int _9;
+  uint8_t _17;
+
+  <bb 2> :
+  Data.8_1 = (unsigned char) Data_12(D);
+  msb_13 = Data.8_1 >> 7;
+  count_14 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.9_2 = count_11;
+  count_15 = count.9_2 + 1;
+  _3 = (int) Data_10;
+  _4 = _3 << 1;
+  Data_16 = (int8_t) _4;
+
+  <bb 4> :
+  # Data_10 = PHI <Data_12(D)(2), Data_16(3)>
+  # count_11 = PHI <count_14(2), count_15(3)>
+  _5 = Data_10 >> 6;
+  _6 = (unsigned char) _5;
+  _7 = (int) _6;
+  _8 = _7 & 1;
+  _9 = (int) msb_13;
+  if (_8 == _9)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count_11 <= 6)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _17 = count_11;
+
+  <bb 7> :
+<L4>:
+  return _17;
+
+}
+
+
+Bfx_CountLeadingOnes_u8 (uint8_t Data)
+{
+  uint8_t count;
+  uint8_t D.5438;
+  unsigned char count.6_1;
+  signed char Data.7_2;
+  uint8_t _9;
+
+  <bb 2> :
+  count_5 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.6_1 = count_4;
+  count_7 = count.6_1 + 1;
+  Data_8 = Data_3 << 1;
+
+  <bb 4> :
+  # Data_3 = PHI <Data_6(D)(2), Data_8(3)>
+  # count_4 = PHI <count_5(2), count_7(3)>
+  Data.7_2 = (signed char) Data_3;
+  if (Data.7_2 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count_4 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _9 = count_4;
+
+  <bb 7> :
+<L4>:
+  return _9;
+
+}
+
+
+Bfx_ShiftBitSat_s8s8_s8 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint8_t result;
+  int8_t D.5435;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  int8_t _16;
+
+  <bb 2> :
+  if (ShitfCnt_9(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_9(D) > 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_15 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_10(D);
+  _2 = (int) ShitfCnt_9(D);
+  _3 = _1 >> _2;
+  result_14 = (uint8_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_9(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_9(D) < -7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_13 = 255;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data_10(D);
+  _5 = (int) ShitfCnt_9(D);
+  _6 = -_5;
+  _7 = _4 << _6;
+  result_12 = (uint8_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_11 = Data_10(D);
+
+  <bb 11> :
+  # result_8 = PHI <result_14(5), result_12(9), result_11(10), result_15(4), result_13(8)>
+  _16 = (int8_t) result_8;
+
+  <bb 12> :
+<L12>:
+  return _16;
+
+}
+
+
+Bfx_ShiftBitSat_u8s8_u8 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint8_t result;
+  uint8_t D.5421;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  uint8_t _16;
+
+  <bb 2> :
+  if (ShitfCnt_9(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_9(D) > 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_15 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_10(D);
+  _2 = (int) ShitfCnt_9(D);
+  _3 = _1 >> _2;
+  result_14 = (uint8_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_9(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_9(D) < -7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_13 = 255;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data_10(D);
+  _5 = (int) ShitfCnt_9(D);
+  _6 = -_5;
+  _7 = _4 << _6;
+  result_12 = (uint8_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_11 = Data_10(D);
+
+  <bb 11> :
+  # result_8 = PHI <result_14(5), result_12(9), result_11(10), result_15(4), result_13(8)>
+  _16 = result_8;
+
+  <bb 12> :
+<L12>:
+  return _16;
+
+}
+
+
+Bfx_PutBit_u8u8u8 (uint8_t * Data, uint8_t BitPn, _Bool Status)
+{
+  uint8_t mask;
+  int _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  signed char _6;
+  signed char mask.5_7;
+  signed char _8;
+  signed char _9;
+  unsigned char _10;
+
+  <bb 2> :
+  _1 = (int) BitPn_12(D);
+  _2 = 1 << _1;
+  mask_13 = (uint8_t) _2;
+  if (Status_14(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = *Data_16(D);
+  _4 = mask_13 | _3;
+  *Data_16(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = *Data_16(D);
+  _6 = (signed char) _5;
+  mask.5_7 = (signed char) mask_13;
+  _8 = ~mask.5_7;
+  _9 = _6 & _8;
+  _10 = (unsigned char) _9;
+  *Data_16(D) = _10;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_PutBitsMask_u8u8u8 (uint8_t * Data, uint8_t Pattern, uint8_t Mask)
+{
+  unsigned char _1;
+  signed char _2;
+  signed char Mask.4_3;
+  signed char _4;
+  signed char _5;
+  unsigned char _6;
+  signed char _7;
+  signed char _8;
+  unsigned char _9;
+
+  <bb 2> :
+  _1 = *Data_11(D);
+  _2 = (signed char) _1;
+  Mask.4_3 = (signed char) Mask_12(D);
+  _4 = ~Mask.4_3;
+  _5 = _2 & _4;
+  _6 = Pattern_13(D) & Mask_12(D);
+  _7 = (signed char) _6;
+  _8 = _5 | _7;
+  _9 = (unsigned char) _8;
+  *Data_11(D) = _9;
+  return;
+
+}
+
+
+Bfx_PutBits_u8u8u8u8 (uint8_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Pattern)
+{
+  uint8_t Mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  unsigned char _6;
+  signed char _7;
+  signed char Mask.2_8;
+  signed char _9;
+  signed char _10;
+  unsigned char _11;
+  unsigned char _12;
+  signed char _13;
+  int _14;
+  int _15;
+  int _16;
+  signed char _17;
+  signed char Mask.3_18;
+  signed char _19;
+  signed char _20;
+  unsigned char _21;
+
+  <bb 2> :
+  _1 = (int) BitLn_22(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_23(D);
+  _5 = _3 << _4;
+  Mask_24 = (uint8_t) _5;
+  _6 = *Data_26(D);
+  _7 = (signed char) _6;
+  Mask.2_8 = (signed char) Mask_24;
+  _9 = ~Mask.2_8;
+  _10 = _7 & _9;
+  _11 = (unsigned char) _10;
+  *Data_26(D) = _11;
+  _12 = *Data_26(D);
+  _13 = (signed char) _12;
+  _14 = (int) Pattern_28(D);
+  _15 = (int) BitStartPn_23(D);
+  _16 = _14 << _15;
+  _17 = (signed char) _16;
+  Mask.3_18 = (signed char) Mask_24;
+  _19 = _17 & Mask.3_18;
+  _20 = _13 | _19;
+  _21 = (unsigned char) _20;
+  *Data_26(D) = _21;
+  return;
+
+}
+
+
+Bfx_CopyBit_u8u8u8u8 (uint8_t * DestinationData, uint8_t DestinationPosition, uint8_t SourceData, uint8_t SourcePosition)
+{
+  uint8_t sourceBit;
+  int _1;
+  int _2;
+  int _3;
+  unsigned char _4;
+  unsigned char _5;
+  signed char _6;
+  int _7;
+  int _8;
+  signed char _9;
+  signed char _10;
+  signed char _11;
+  unsigned char _12;
+  unsigned char _13;
+  signed char _14;
+  int _15;
+  int _16;
+  int _17;
+  signed char _18;
+  signed char _19;
+  unsigned char _20;
+
+  <bb 2> :
+  _1 = (int) SourceData_21(D);
+  _2 = (int) SourcePosition_22(D);
+  _3 = _1 >> _2;
+  _4 = (unsigned char) _3;
+  sourceBit_23 = _4 & 1;
+  _5 = *DestinationData_25(D);
+  _6 = (signed char) _5;
+  _7 = (int) DestinationPosition_26(D);
+  _8 = 1 << _7;
+  _9 = (signed char) _8;
+  _10 = ~_9;
+  _11 = _6 & _10;
+  _12 = (unsigned char) _11;
+  *DestinationData_25(D) = _12;
+  _13 = *DestinationData_25(D);
+  _14 = (signed char) _13;
+  _15 = (int) sourceBit_23;
+  _16 = (int) DestinationPosition_26(D);
+  _17 = _15 << _16;
+  _18 = (signed char) _17;
+  _19 = _14 | _18;
+  _20 = (unsigned char) _19;
+  *DestinationData_25(D) = _20;
+  return;
+
+}
+
+
+Bfx_RotBitLt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  signed char _5;
+  unsigned char _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  signed char _11;
+  signed char _12;
+  unsigned char _13;
+
+  <bb 2> :
+  ShiftCnt_15 = ShiftCnt_14(D) & 7;
+  _1 = *Data_17(D);
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt_15;
+  _4 = _2 << _3;
+  _5 = (signed char) _4;
+  _6 = *Data_17(D);
+  _7 = (int) _6;
+  _8 = (int) ShiftCnt_15;
+  _9 = 8 - _8;
+  _10 = _7 >> _9;
+  _11 = (signed char) _10;
+  _12 = _5 | _11;
+  _13 = (unsigned char) _12;
+  *Data_17(D) = _13;
+  return;
+
+}
+
+
+Bfx_RotBitRt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  signed char _5;
+  unsigned char _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  signed char _11;
+  signed char _12;
+  unsigned char _13;
+
+  <bb 2> :
+  ShiftCnt_15 = ShiftCnt_14(D) & 7;
+  _1 = *Data_17(D);
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt_15;
+  _4 = _2 >> _3;
+  _5 = (signed char) _4;
+  _6 = *Data_17(D);
+  _7 = (int) _6;
+  _8 = (int) ShiftCnt_15;
+  _9 = 8 - _8;
+  _10 = _7 << _9;
+  _11 = (signed char) _10;
+  _12 = _5 | _11;
+  _13 = (unsigned char) _12;
+  *Data_17(D) = _13;
+  return;
+
+}
+
+
+Bfx_ShiftBitLt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  unsigned char _5;
+
+  <bb 2> :
+  if (ShiftCnt_7(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_9(D);
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt_7(D);
+  _4 = _2 << _3;
+  _5 = (unsigned char) _4;
+  *Data_9(D) = _5;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_9(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ShiftBitRt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  unsigned char _5;
+
+  <bb 2> :
+  if (ShiftCnt_7(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_9(D);
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt_7(D);
+  _4 = _2 >> _3;
+  _5 = (unsigned char) _4;
+  *Data_9(D) = _5;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_9(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ToggleBitMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) ^ _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_ToggleBits_u8 (uint8_t * Data)
+{
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = ~_1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_TstParityEven_u8_u8 (uint8_t Data)
+{
+  uint8_t count;
+  _Bool D.5398;
+  unsigned char _1;
+  unsigned char _2;
+  _Bool _5;
+  _Bool _8;
+  _Bool _9;
+
+  <bb 2> :
+  count_6 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Data_3 & 1;
+  count_11 = count_4 + _1;
+  Data_12 = Data_3 >> 1;
+
+  <bb 4> :
+  # Data_3 = PHI <Data_7(D)(2), Data_12(3)>
+  # count_4 = PHI <count_6(2), count_11(3)>
+  if (Data_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = count_4 & 1;
+  if (_2 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 8> :
+  # _5 = PHI <_9(6), _8(7)>
+<L5>:
+  return _5;
+
+}
+
+
+Bfx_TstBitLnMask_u8u8_u8 (uint8_t Data, uint8_t Mask)
+{
+  _Bool D.5394;
+  unsigned char _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+Bfx_TstBitMask_u8u8_u8 (uint8_t Data, uint8_t Mask)
+{
+  _Bool D.5390;
+  unsigned char _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (Mask_4(D) == _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+Bfx_ClrBitMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  unsigned char _1;
+  signed char _2;
+  signed char Mask.1_3;
+  signed char _4;
+  signed char _5;
+  unsigned char _6;
+
+  <bb 2> :
+  _1 = *Data_8(D);
+  _2 = (signed char) _1;
+  Mask.1_3 = (signed char) Mask_9(D);
+  _4 = ~Mask.1_3;
+  _5 = _2 & _4;
+  _6 = (unsigned char) _5;
+  *Data_8(D) = _6;
+  return;
+
+}
+
+
+Bfx_SetBitsMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) | _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_GetBits_u8u8u8_u8 (uint8_t Data, uint8_t BitStartPn, uint8_t BitLn)
+{
+  uint8_t mask;
+  uint8_t D.5386;
+  int _1;
+  int _2;
+  unsigned char _3;
+  int _4;
+  int _5;
+  int _6;
+  unsigned char _7;
+  int _8;
+  int _9;
+  int _10;
+  uint8_t _16;
+
+  <bb 2> :
+  _1 = (int) BitLn_11(D);
+  _2 = 1 << _1;
+  _3 = (unsigned char) _2;
+  mask_12 = _3 + 255;
+  _4 = (int) mask_12;
+  _5 = (int) BitStartPn_13(D);
+  _6 = _4 << _5;
+  mask_14 = (uint8_t) _6;
+  _7 = Data_15(D) & mask_14;
+  _8 = (int) _7;
+  _9 = (int) BitStartPn_13(D);
+  _10 = _8 >> _9;
+  _16 = (uint8_t) _10;
+
+  <bb 3> :
+<L0>:
+  return _16;
+
+}
+
+
+Bfx_SetBits_u8u8u8u8 (uint8_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Status)
+{
+  uint8_t mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  signed char _9;
+  signed char mask.0_10;
+  signed char _11;
+  signed char _12;
+  unsigned char _13;
+
+  <bb 2> :
+  _1 = (int) BitLn_15(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_16(D);
+  _5 = _3 << _4;
+  mask_17 = (uint8_t) _5;
+  if (Status_18(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = *Data_20(D);
+  _7 = mask_17 | _6;
+  *Data_20(D) = _7;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = *Data_20(D);
+  _9 = (signed char) _8;
+  mask.0_10 = (signed char) mask_17;
+  _11 = ~mask.0_10;
+  _12 = _9 & _11;
+  _13 = (unsigned char) _12;
+  *Data_20(D) = _13;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_GetBit_u8u8_u8 (uint8_t * Data, uint8_t BitPn)
+{
+  _Bool D.5381;
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  _Bool _6;
+  _Bool _10;
+  _Bool _11;
+
+  <bb 2> :
+  _1 = *Data_8(D);
+  _2 = (int) _1;
+  _3 = (int) BitPn_9(D);
+  _4 = _2 >> _3;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _11 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _10 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _6 = PHI <_11(3), _10(4)>
+<L2>:
+  return _6;
+
+}
+
+
+Bfx_ClrBit_u8u8 (uint8_t * Data, uint8_t BitPn)
+{
+  unsigned char _1;
+  signed char _2;
+  int _3;
+  int _4;
+  signed char _5;
+  signed char _6;
+  signed char _7;
+  unsigned char _8;
+
+  <bb 2> :
+  _1 = *Data_10(D);
+  _2 = (signed char) _1;
+  _3 = (int) BitPn_11(D);
+  _4 = 1 << _3;
+  _5 = (signed char) _4;
+  _6 = ~_5;
+  _7 = _2 & _6;
+  _8 = (unsigned char) _7;
+  *Data_10(D) = _8;
+  return;
+
+}
+
+
+Bfx_SetBit_u8u8 (uint8_t * Data, uint8_t BitPn)
+{
+  unsigned char _1;
+  signed char _2;
+  int _3;
+  int _4;
+  signed char _5;
+  signed char _6;
+  unsigned char _7;
+
+  <bb 2> :
+  _1 = *Data_9(D);
+  _2 = (signed char) _1;
+  _3 = (int) BitPn_10(D);
+  _4 = 1 << _3;
+  _5 = (signed char) _4;
+  _6 = _2 | _5;
+  _7 = (unsigned char) _6;
+  *Data_9(D) = _7;
+  return;
+
+}
+
+

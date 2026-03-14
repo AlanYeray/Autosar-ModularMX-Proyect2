@@ -1,0 +1,52 @@
+HwIoAb_Pots_GetAltValue (uint16 * AltPots)
+{
+  <bb 2> :
+  Adc_StartGroupConversion (0);
+
+  <bb 3> :
+  _1 = Adc_GetGroupStatus (0);
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  Adc_ReadGroup (0, AltPots);
+  return;
+
+}
+
+
+HwIoAb_Pots_GetValue (uint16 * Pots)
+{
+  <bb 2> :
+  Adc_StartGroupConversion (0);
+
+  <bb 3> :
+  _1 = Adc_GetGroupStatus (0);
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  Adc_ReadGroup (0, Pots);
+  return;
+
+}
+
+
+HwIoAb_Pots_Init (const struct Pots_Config * Config)
+{
+  <bb 2> :
+  Port_Ci_Port_Ip_SetMuxModeSel (1074044928B, 13, 8);
+  Adc_Calibrate (0, &CalibStatus);
+  Adc_SetupResultBuffer (0, &ResultBuffer);
+  Adc_Calibrate (1, &CalibStatus1);
+  Adc_SetupResultBuffer (0, &ResultBuffer1);
+  HwIoAb_Adc_Ptr = Config;
+  return;
+
+}
+
+

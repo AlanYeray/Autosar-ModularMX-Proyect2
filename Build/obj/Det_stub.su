@@ -1,0 +1,6 @@
+Autosar/Det/src/Det_stub.c:98:13:Det_TestLastReportError	24	static
+Autosar/Det/src/Det_stub.c:130:13:Det_TestLastReportRuntimeError	24	static
+Autosar/Det/src/Det_stub.c:162:13:Det_TestLastReportTransientFault	24	static
+Autosar/Det/src/Det_stub.c:188:13:Det_TestNoError	16	static
+Autosar/Det/src/Det_stub.c:210:13:Det_TestNoRuntimeError	16	static
+Autosar/Det/src/Det_stub.c:232:13:Det_TestNoTransientFault	16	static

@@ -1,0 +1,2008 @@
+Trivially needed symbols: Delay/13 callback_timer/12 Os_Task_leds/11 Os_10ms_Task/10 EcuM_Init/9 main/8
+
+
+Initial Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 main/8 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @073f5700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @073f5460
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @073f51c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @073f0c40
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @073f0e00
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+Platform_Ipw_InstallIrqHandler/7 (Platform_Ipw_InstallIrqHandler) @072dc000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_Ipw_GetIrqPriority/6 (Platform_Ipw_GetIrqPriority) @07333e00
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_Ipw_SetIrqPriority/5 (Platform_Ipw_SetIrqPriority) @07333b60
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_Ipw_SetIrq/4 (Platform_Ipw_SetIrq) @073338c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Ftm_Gpt_Ip_GetCompareValue/3 (Ftm_Gpt_Ip_GetCompareValue) @06f45d20
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Ftm_Gpt_Ip_GetCntValue/2 (Ftm_Gpt_Ip_GetCntValue) @06f45a80
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Ftm_Gpt_Ip_GetChInterruptStatusFlag/1 (Ftm_Gpt_Ip_GetChInterruptStatusFlag) @06f457e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DevAssert/0 (DevAssert) @06e0f460
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: Platform_Ipw_InstallIrqHandler/7 Platform_Ipw_GetIrqPriority/6 Platform_Ipw_SetIrqPriority/5 Platform_Ipw_SetIrq/4 Ftm_Gpt_Ip_GetCompareValue/3 Ftm_Gpt_Ip_GetCntValue/2 Ftm_Gpt_Ip_GetChInterruptStatusFlag/1 DevAssert/0
+
+Reclaimed Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 main/8 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+
+
+Initial Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 main/8 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not-ready
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: EcuM_Init/9 main/8 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 EcuM_Init/9 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Delay (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.callback_timer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Os_Task_leds (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Os_10ms_Task (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.EcuM_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.main (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

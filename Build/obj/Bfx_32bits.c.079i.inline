@@ -1,0 +1,1178 @@
+IPA summary for Bfx_CountLeadingZeros_u32/24 is missing.
+IPA summary for Bfx_CountLeadingSigns_s32/23 is missing.
+IPA summary for Bfx_CountLeadingOnes_u32/22 is missing.
+IPA summary for Bfx_ShiftBitSat_s32s8_s32/21 is missing.
+IPA summary for Bfx_ShiftBitSat_u32s8_u32/20 is missing.
+IPA summary for Bfx_PutBit_u32u8u8/19 is missing.
+IPA summary for Bfx_PutBitsMask_u32u32u32/18 is missing.
+IPA summary for Bfx_PutBits_u32u8u8u8/17 is missing.
+IPA summary for Bfx_CopyBit_u32u8u32u8/16 is missing.
+IPA summary for Bfx_RotBitLt_u32u8/15 is missing.
+IPA summary for Bfx_RotBitRt_u32u8/14 is missing.
+IPA summary for Bfx_ShiftBitLt_u32u8/13 is missing.
+IPA summary for Bfx_ShiftBitRt_u32u8/12 is missing.
+IPA summary for Bfx_ToggleBitMask_u32u32/11 is missing.
+IPA summary for Bfx_ToggleBits_u32/10 is missing.
+IPA summary for Bfx_TstParityEven_u32_u8/9 is missing.
+IPA summary for Bfx_TstBitLnMask_u32u32_u8/8 is missing.
+IPA summary for Bfx_TstBitMask_u32u32_u8/7 is missing.
+IPA summary for Bfx_ClrBitMask_u32u32/6 is missing.
+IPA summary for Bfx_SetBitsMask_u32u32/5 is missing.
+IPA summary for Bfx_GetBits_u32u8u8_u8/4 is missing.
+IPA summary for Bfx_SetBits_u32u8u8u8/3 is missing.
+IPA summary for Bfx_GetBit_u32u8_u8/2 is missing.
+IPA summary for Bfx_ClrBit_u32u8/1 is missing.
+IPA summary for Bfx_SetBit_u32u8/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+node context cache: 0 hits, 0 misses, 0 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+IPA summary for Bfx_CountLeadingZeros_u32/24 is missing.
+IPA summary for Bfx_CountLeadingSigns_s32/23 is missing.
+IPA summary for Bfx_CountLeadingOnes_u32/22 is missing.
+IPA summary for Bfx_ShiftBitSat_s32s8_s32/21 is missing.
+IPA summary for Bfx_ShiftBitSat_u32s8_u32/20 is missing.
+IPA summary for Bfx_PutBit_u32u8u8/19 is missing.
+IPA summary for Bfx_PutBitsMask_u32u32u32/18 is missing.
+IPA summary for Bfx_PutBits_u32u8u8u8/17 is missing.
+IPA summary for Bfx_CopyBit_u32u8u32u8/16 is missing.
+IPA summary for Bfx_RotBitLt_u32u8/15 is missing.
+IPA summary for Bfx_RotBitRt_u32u8/14 is missing.
+IPA summary for Bfx_ShiftBitLt_u32u8/13 is missing.
+IPA summary for Bfx_ShiftBitRt_u32u8/12 is missing.
+IPA summary for Bfx_ToggleBitMask_u32u32/11 is missing.
+IPA summary for Bfx_ToggleBits_u32/10 is missing.
+IPA summary for Bfx_TstParityEven_u32_u8/9 is missing.
+IPA summary for Bfx_TstBitLnMask_u32u32_u8/8 is missing.
+IPA summary for Bfx_TstBitMask_u32u32_u8/7 is missing.
+IPA summary for Bfx_ClrBitMask_u32u32/6 is missing.
+IPA summary for Bfx_SetBitsMask_u32u32/5 is missing.
+IPA summary for Bfx_GetBits_u32u8u8_u8/4 is missing.
+IPA summary for Bfx_SetBits_u32u8u8u8/3 is missing.
+IPA summary for Bfx_GetBit_u32u8_u8/2 is missing.
+IPA summary for Bfx_ClrBit_u32u8/1 is missing.
+IPA summary for Bfx_SetBit_u32u8/0 is missing.
+Symbol table:
+
+Bfx_CountLeadingZeros_u32/24 (Bfx_CountLeadingZeros_u32) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_s32/23 (Bfx_CountLeadingSigns_s32) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u32/22 (Bfx_CountLeadingOnes_u32) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s32s8_s32/21 (Bfx_ShiftBitSat_s32s8_s32) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u32s8_u32/20 (Bfx_ShiftBitSat_u32s8_u32) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u32u8u8/19 (Bfx_PutBit_u32u8u8) @06898d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u32u32u32/18 (Bfx_PutBitsMask_u32u32u32) @068987e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u32u8u8u8/17 (Bfx_PutBits_u32u8u8u8) @068982a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u32u8u32u8/16 (Bfx_CopyBit_u32u8u32u8) @06898ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u32u8/15 (Bfx_RotBitLt_u32u8) @06898c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u32u8/14 (Bfx_RotBitRt_u32u8) @068989a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u32u8/13 (Bfx_ShiftBitLt_u32u8) @06898700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u32u8/12 (Bfx_ShiftBitRt_u32u8) @06898460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u32u32/11 (Bfx_ToggleBitMask_u32u32) @068981c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u32/10 (Bfx_ToggleBits_u32) @06882d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u32_u8/9 (Bfx_TstParityEven_u32_u8) @068827e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u32u32_u8/8 (Bfx_TstBitLnMask_u32u32_u8) @068822a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u32u32_u8/7 (Bfx_TstBitMask_u32u32_u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u32u32/6 (Bfx_ClrBitMask_u32u32) @06882c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u32u32/5 (Bfx_SetBitsMask_u32u32) @068829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u32u8u8_u8/4 (Bfx_GetBits_u32u8u8_u8) @06882700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u32u8u8u8/3 (Bfx_SetBits_u32u8u8u8) @06882460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u32u8_u8/2 (Bfx_GetBit_u32u8_u8) @068821c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u32u8/1 (Bfx_ClrBit_u32u8) @0687eee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u32u8/0 (Bfx_SetBit_u32u8) @0687ee00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+
+;; Function Bfx_SetBit_u32u8 (Bfx_SetBit_u32u8, funcdef_no=0, decl_uid=5170, cgraph_uid=1, symbol_order=0)
+
+Bfx_SetBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  long unsigned int _1;
+  int _2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  _1 = *Data_7(D);
+  _2 = (int) BitPn_8(D);
+  _3 = 1 << _2;
+  _4 = (long unsigned int) _3;
+  _5 = _1 | _4;
+  *Data_7(D) = _5;
+  return;
+
+}
+
+
+
+;; Function Bfx_ClrBit_u32u8 (Bfx_ClrBit_u32u8, funcdef_no=1, decl_uid=5173, cgraph_uid=2, symbol_order=1)
+
+Bfx_ClrBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  long unsigned int _1;
+  int _2;
+  int _3;
+  int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  _1 = *Data_8(D);
+  _2 = (int) BitPn_9(D);
+  _3 = 1 << _2;
+  _4 = ~_3;
+  _5 = (long unsigned int) _4;
+  _6 = _1 & _5;
+  *Data_8(D) = _6;
+  return;
+
+}
+
+
+
+;; Function Bfx_GetBit_u32u8_u8 (Bfx_GetBit_u32u8_u8, funcdef_no=2, decl_uid=5176, cgraph_uid=3, symbol_order=2)
+
+Bfx_GetBit_u32u8_u8 (uint32_t Data, uint8_t BitPn)
+{
+  _Bool D.5382;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _8;
+  _Bool _9;
+
+  <bb 2> :
+  _1 = (int) BitPn_6(D);
+  _2 = 1 << _1;
+  _3 = (long unsigned int) _2;
+  _4 = Data_7(D) & _3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _9 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _5 = PHI <_9(3), _8(4)>
+<L2>:
+  return _5;
+
+}
+
+
+
+;; Function Bfx_SetBits_u32u8u8u8 (Bfx_SetBits_u32u8u8u8, funcdef_no=3, decl_uid=5181, cgraph_uid=4, symbol_order=3)
+
+Bfx_SetBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Status)
+{
+  uint32_t mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+
+  <bb 2> :
+  _1 = (int) BitLn_12(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_13(D);
+  _5 = _3 << _4;
+  mask_14 = (uint32_t) _5;
+  if (Status_15(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = *Data_17(D);
+  _7 = mask_14 | _6;
+  *Data_17(D) = _7;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = *Data_17(D);
+  _9 = ~mask_14;
+  _10 = _8 & _9;
+  *Data_17(D) = _10;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Bfx_GetBits_u32u8u8_u8 (Bfx_GetBits_u32u8u8_u8, funcdef_no=4, decl_uid=5185, cgraph_uid=5, symbol_order=4)
+
+Bfx_GetBits_u32u8u8_u8 (uint32_t Data, uint8_t BitStartPn, uint8_t BitLn)
+{
+  uint32_t mask;
+  uint32_t D.5387;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  long unsigned int _5;
+  int _6;
+  uint32_t _12;
+
+  <bb 2> :
+  _1 = (int) BitLn_7(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  mask_8 = (uint32_t) _3;
+  _4 = (int) BitStartPn_9(D);
+  mask_10 = mask_8 << _4;
+  _5 = Data_11(D) & mask_10;
+  _6 = (int) BitStartPn_9(D);
+  _12 = _5 >> _6;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+
+;; Function Bfx_SetBitsMask_u32u32 (Bfx_SetBitsMask_u32u32, funcdef_no=5, decl_uid=5188, cgraph_uid=6, symbol_order=5)
+
+Bfx_SetBitsMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) | _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+
+;; Function Bfx_ClrBitMask_u32u32 (Bfx_ClrBitMask_u32u32, funcdef_no=6, decl_uid=5191, cgraph_uid=7, symbol_order=6)
+
+Bfx_ClrBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  _1 = *Data_5(D);
+  _2 = ~Mask_6(D);
+  _3 = _1 & _2;
+  *Data_5(D) = _3;
+  return;
+
+}
+
+
+
+;; Function Bfx_TstBitMask_u32u32_u8 (Bfx_TstBitMask_u32u32_u8, funcdef_no=7, decl_uid=5194, cgraph_uid=8, symbol_order=7)
+
+Bfx_TstBitMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5391;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (Mask_4(D) == _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+
+;; Function Bfx_TstBitLnMask_u32u32_u8 (Bfx_TstBitLnMask_u32u32_u8, funcdef_no=8, decl_uid=5197, cgraph_uid=9, symbol_order=8)
+
+Bfx_TstBitLnMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5395;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+
+;; Function Bfx_TstParityEven_u32_u8 (Bfx_TstParityEven_u32_u8, funcdef_no=9, decl_uid=5199, cgraph_uid=10, symbol_order=9)
+
+Bfx_TstParityEven_u32_u8 (uint32_t Data)
+{
+  uint32_t count;
+  _Bool D.5399;
+  long unsigned int _1;
+  long unsigned int _2;
+  _Bool _5;
+  _Bool _8;
+  _Bool _9;
+
+  <bb 2> :
+  count_6 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Data_3 & 1;
+  count_11 = count_4 + _1;
+  Data_12 = Data_3 >> 1;
+
+  <bb 4> :
+  # Data_3 = PHI <Data_7(D)(2), Data_12(3)>
+  # count_4 = PHI <count_6(2), count_11(3)>
+  if (Data_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = count_4 & 1;
+  if (_2 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 8> :
+  # _5 = PHI <_9(6), _8(7)>
+<L5>:
+  return _5;
+
+}
+
+
+
+;; Function Bfx_ToggleBits_u32 (Bfx_ToggleBits_u32, funcdef_no=10, decl_uid=5201, cgraph_uid=11, symbol_order=10)
+
+Bfx_ToggleBits_u32 (uint32_t * Data)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = ~_1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+
+;; Function Bfx_ToggleBitMask_u32u32 (Bfx_ToggleBitMask_u32u32, funcdef_no=11, decl_uid=5204, cgraph_uid=12, symbol_order=11)
+
+Bfx_ToggleBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) ^ _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+
+;; Function Bfx_ShiftBitRt_u32u8 (Bfx_ShiftBitRt_u32u8, funcdef_no=12, decl_uid=5207, cgraph_uid=13, symbol_order=12)
+
+Bfx_ShiftBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  if (ShiftCnt_5(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5(D);
+  _3 = _1 >> _2;
+  *Data_7(D) = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_7(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Bfx_ShiftBitLt_u32u8 (Bfx_ShiftBitLt_u32u8, funcdef_no=13, decl_uid=5210, cgraph_uid=14, symbol_order=13)
+
+Bfx_ShiftBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  if (ShiftCnt_5(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5(D);
+  _3 = _1 << _2;
+  *Data_7(D) = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_7(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Bfx_RotBitRt_u32u8 (Bfx_RotBitRt_u32u8, funcdef_no=14, decl_uid=5213, cgraph_uid=15, symbol_order=14)
+
+Bfx_RotBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  ShiftCnt_5 = ShiftCnt_4(D) % 31;
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5;
+  _3 = _1 r>> _2;
+  *Data_7(D) = _3;
+  return;
+
+}
+
+
+
+;; Function Bfx_RotBitLt_u32u8 (Bfx_RotBitLt_u32u8, funcdef_no=15, decl_uid=5216, cgraph_uid=16, symbol_order=15)
+
+Bfx_RotBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  ShiftCnt_5 = ShiftCnt_4(D) % 31;
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5;
+  _3 = _1 r<< _2;
+  *Data_7(D) = _3;
+  return;
+
+}
+
+
+
+;; Function Bfx_CopyBit_u32u8u32u8 (Bfx_CopyBit_u32u8u32u8, funcdef_no=16, decl_uid=5221, cgraph_uid=17, symbol_order=16)
+
+Bfx_CopyBit_u32u8u32u8 (uint32_t * DestinationData, uint8_t DestinationPosition, uint32_t SourceData, uint8_t SourcePosition)
+{
+  uint32_t sourceBit;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  int _4;
+  int _5;
+  int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+
+  <bb 2> :
+  _1 = (int) SourcePosition_13(D);
+  _2 = SourceData_14(D) >> _1;
+  sourceBit_15 = _2 & 1;
+  _3 = *DestinationData_17(D);
+  _4 = (int) DestinationPosition_18(D);
+  _5 = 1 << _4;
+  _6 = ~_5;
+  _7 = (long unsigned int) _6;
+  _8 = _3 & _7;
+  *DestinationData_17(D) = _8;
+  _9 = *DestinationData_17(D);
+  _10 = (int) DestinationPosition_18(D);
+  _11 = sourceBit_15 << _10;
+  _12 = _9 | _11;
+  *DestinationData_17(D) = _12;
+  return;
+
+}
+
+
+
+;; Function Bfx_PutBits_u32u8u8u8 (Bfx_PutBits_u32u8u8u8, funcdef_no=17, decl_uid=5226, cgraph_uid=18, symbol_order=17)
+
+Bfx_PutBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint32_t Pattern)
+{
+  uint32_t Mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+
+  <bb 2> :
+  _1 = (int) BitLn_14(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_15(D);
+  _5 = _3 << _4;
+  Mask_16 = (uint32_t) _5;
+  _6 = *Data_18(D);
+  _7 = ~Mask_16;
+  _8 = _6 & _7;
+  *Data_18(D) = _8;
+  _9 = *Data_18(D);
+  _10 = (int) BitStartPn_15(D);
+  _11 = Pattern_20(D) << _10;
+  _12 = Mask_16 & _11;
+  _13 = _9 | _12;
+  *Data_18(D) = _13;
+  return;
+
+}
+
+
+
+;; Function Bfx_PutBitsMask_u32u32u32 (Bfx_PutBitsMask_u32u32u32, funcdef_no=18, decl_uid=5230, cgraph_uid=19, symbol_order=18)
+
+Bfx_PutBitsMask_u32u32u32 (uint32_t * Data, uint32_t Pattern, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  _1 = *Data_7(D);
+  _2 = ~Mask_8(D);
+  _3 = _1 & _2;
+  _4 = Pattern_9(D) & Mask_8(D);
+  _5 = _3 | _4;
+  *Data_7(D) = _5;
+  return;
+
+}
+
+
+
+;; Function Bfx_PutBit_u32u8u8 (Bfx_PutBit_u32u8u8, funcdef_no=19, decl_uid=5234, cgraph_uid=20, symbol_order=19)
+
+Bfx_PutBit_u32u8u8 (uint32_t * Data, uint8_t BitPn, _Bool Status)
+{
+  uint32_t mask;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  _1 = (int) BitPn_9(D);
+  _2 = 1 << _1;
+  mask_10 = (uint32_t) _2;
+  if (Status_11(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = *Data_13(D);
+  _4 = mask_10 | _3;
+  *Data_13(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = *Data_13(D);
+  _6 = ~mask_10;
+  _7 = _5 & _6;
+  *Data_13(D) = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Bfx_ShiftBitSat_u32s8_u32 (Bfx_ShiftBitSat_u32s8_u32, funcdef_no=20, decl_uid=5237, cgraph_uid=21, symbol_order=20)
+
+Bfx_ShiftBitSat_u32s8_u32 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint32_t result;
+  uint32_t D.5422;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  uint32_t _16;
+
+  <bb 2> :
+  if (ShitfCnt_9(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_9(D) > 31)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_15 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_10(D);
+  _2 = (int) ShitfCnt_9(D);
+  _3 = _1 >> _2;
+  result_14 = (uint32_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_9(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_9(D) < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_13 = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data_10(D);
+  _5 = (int) ShitfCnt_9(D);
+  _6 = -_5;
+  _7 = _4 << _6;
+  result_12 = (uint32_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_11 = (uint32_t) Data_10(D);
+
+  <bb 11> :
+  # result_8 = PHI <result_14(5), result_12(9), result_11(10), result_15(4), result_13(8)>
+  _16 = result_8;
+
+  <bb 12> :
+<L12>:
+  return _16;
+
+}
+
+
+
+;; Function Bfx_ShiftBitSat_s32s8_s32 (Bfx_ShiftBitSat_s32s8_s32, funcdef_no=21, decl_uid=5240, cgraph_uid=22, symbol_order=21)
+
+Bfx_ShiftBitSat_s32s8_s32 (int32_t ShitfCnt, int8_t Data)
+{
+  uint32_t result;
+  int32_t D.5436;
+  int _1;
+  int _2;
+  int _3;
+  long int _4;
+  int _5;
+  int32_t _14;
+
+  <bb 2> :
+  if (ShitfCnt_7(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_7(D) > 20)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_13 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_8(D);
+  _2 = _1 >> ShitfCnt_7(D);
+  result_12 = (uint32_t) _2;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_7(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_7(D) < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_11 = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _3 = (int) Data_8(D);
+  _4 = -ShitfCnt_7(D);
+  _5 = _3 << _4;
+  result_10 = (uint32_t) _5;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_9 = (uint32_t) Data_8(D);
+
+  <bb 11> :
+  # result_6 = PHI <result_12(5), result_10(9), result_9(10), result_13(4), result_11(8)>
+  _14 = (int32_t) result_6;
+
+  <bb 12> :
+<L12>:
+  return _14;
+
+}
+
+
+
+;; Function Bfx_CountLeadingOnes_u32 (Bfx_CountLeadingOnes_u32, funcdef_no=22, decl_uid=5242, cgraph_uid=23, symbol_order=22)
+
+Bfx_CountLeadingOnes_u32 (uint32_t Data)
+{
+  uint32_t temp;
+  uint32_t count;
+  uint32_t D.5438;
+  long unsigned int _1;
+  uint32_t _7;
+
+  <bb 2> :
+  count_4 = 0;
+  temp_6 = Data_5(D);
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_9 = count_2 + 1;
+  temp_10 = temp_3 >> 1;
+
+  <bb 4> :
+  # count_2 = PHI <count_4(2), count_9(3)>
+  # temp_3 = PHI <temp_6(2), temp_10(3)>
+  _1 = temp_3 & 1;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _7 = count_2;
+
+  <bb 6> :
+<L3>:
+  return _7;
+
+}
+
+
+
+;; Function Bfx_CountLeadingSigns_s32 (Bfx_CountLeadingSigns_s32, funcdef_no=23, decl_uid=5244, cgraph_uid=24, symbol_order=23)
+
+Bfx_CountLeadingSigns_s32 (int32_t Data)
+{
+  uint32_t count;
+  uint32_t msb;
+  uint32_t D.5441;
+  unsigned int Data.0_1;
+  long int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32_t _12;
+
+  <bb 2> :
+  Data.0_1 = (unsigned int) Data_7(D);
+  msb_8 = Data.0_1 >> 31;
+  count_9 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_10 = count_6 + 1;
+  Data_11 = Data_5 << 1;
+
+  <bb 4> :
+  # Data_5 = PHI <Data_7(D)(2), Data_11(3)>
+  # count_6 = PHI <count_9(2), count_10(3)>
+  _2 = Data_5 >> 30;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 1;
+  if (msb_8 == _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count_6 <= 30)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _12 = count_6;
+
+  <bb 7> :
+<L4>:
+  return _12;
+
+}
+
+
+
+;; Function Bfx_CountLeadingZeros_u32 (Bfx_CountLeadingZeros_u32, funcdef_no=24, decl_uid=5246, cgraph_uid=25, symbol_order=24)
+
+Bfx_CountLeadingZeros_u32 (uint8_t Data)
+{
+  uint32_t count;
+  uint32_t D.5443;
+  uint32_t _5;
+
+  <bb 2> :
+  count_3 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_7 = count_2 + 1;
+  Data_8 = Data_1 << 1;
+
+  <bb 4> :
+  # Data_1 = PHI <Data_4(D)(2), Data_8(3)>
+  # count_2 = PHI <count_3(2), count_7(3)>
+  if (count_2 <= 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _5 = count_2;
+
+  <bb 6> :
+<L3>:
+  return _5;
+
+}
+
+

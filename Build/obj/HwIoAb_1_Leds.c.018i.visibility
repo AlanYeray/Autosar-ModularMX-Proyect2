@@ -1,0 +1,90 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: HwIoAb_Leds_TurnToggle/2 HwIoAb_Leds_TurnOff/1 HwIoAb_Leds_TurnOn/0
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Dio_FlipChannel/4 (Dio_FlipChannel) @069c2700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Leds_TurnToggle/2 
+  Calls: 
+Dio_WriteChannel/3 (Dio_WriteChannel) @069c2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Leds_TurnOff/1 HwIoAb_Leds_TurnOn/0 
+  Calls: 
+HwIoAb_Leds_TurnToggle/2 (HwIoAb_Leds_TurnToggle) @069c2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_FlipChannel/4 
+HwIoAb_Leds_TurnOff/1 (HwIoAb_Leds_TurnOff) @069bbe00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/3 
+HwIoAb_Leds_TurnOn/0 (HwIoAb_Leds_TurnOn) @069bb380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/3 
+HwIoAb_Leds_TurnToggle (uint8 Led)
+{
+  <bb 2> :
+  _1 = (short unsigned int) Led;
+  Dio_FlipChannel (_1);
+  return;
+
+}
+
+
+HwIoAb_Leds_TurnOff (uint8 Led)
+{
+  <bb 2> :
+  _1 = (short unsigned int) Led;
+  Dio_WriteChannel (_1, 0);
+  return;
+
+}
+
+
+HwIoAb_Leds_TurnOn (uint8 Led)
+{
+  <bb 2> :
+  _1 = (short unsigned int) Led;
+  Dio_WriteChannel (_1, 1);
+  return;
+
+}
+
+

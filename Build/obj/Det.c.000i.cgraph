@@ -1,0 +1,1263 @@
+Trivially needed symbols: Det_Start/24 Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Det_Init/16 Det_RuntimeModuleId/15 Det_ModuleId/14 Det_TransientModuleId/13 Det_TransientFaultId/12 Det_TransientApiId/11 Det_TransientInstanceId/10 Det_RuntimeErrorId/9 Det_RuntimeApiId/8 Det_RuntimeInstanceId/7 Det_ErrorId/6 Det_ApiId/5 Det_InstanceId/4 Det_Handler_static/3 Dio_Det_Handler_dinamic/2 Port_Det_Handler_dinamic/1
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b609a0
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b60e00
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b60b60
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b608c0
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b60620
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b60380
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b600e0
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06e9aee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06e9ac40
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44f78
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44f30
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44ee8
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44ea0
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44e58
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44e10
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44dc8
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44d80
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44d38
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44cf0
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44ca8
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44c60
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44c18
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06c44b88
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/0 (DevAssert) @06b19540
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert/0
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: not-ready
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Det_ReportTransientFault/23 Det_ReportRuntimeError/22 Det_ReportError/21 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Det_ReportError/21 Det_Init/16 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_TransientModuleId/13 (write) Det_TransientInstanceId/10 (write) Det_TransientApiId/11 (write) Det_TransientFaultId/12 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_RuntimeModuleId/15 (write) Det_RuntimeInstanceId/7 (write) Det_RuntimeApiId/8 (write) Det_RuntimeErrorId/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Sys_GetCoreID/26 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_ModuleId/14 (write) Det_InstanceId/4 (write) Det_ApiId/5 (write) Det_ErrorId/6 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 getErrorString/20 getApiString/19 getInstanceString/18 getModuleString/17 Sys_GetCoreID/26 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dio_Det_Handler_dinamic/2 (read) Dio_Det_Handler_dinamic/2 (read) Port_Det_Handler_dinamic/1 (read) Port_Det_Handler_dinamic/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Det_Handler_static/3 (read) Det_Handler_static/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Det_ReportError/21 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/25 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportTransientFault/23 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportRuntimeError/22 (write) 
+  Availability: available
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Det_ReportError/21 (write) 
+  Availability: available
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getModuleString/17 (read) getModuleString/17 (read) getInstanceString/18 (read) getInstanceString/18 (read) getInstanceString/18 (read) 
+  Availability: available
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: available
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: getApiString/19 (read) getApiString/19 (read) getErrorString/20 (read) getErrorString/20 (read) getErrorString/20 (read) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Det_RuntimeModuleId/15 Det_ModuleId/14 Det_TransientModuleId/13 Det_TransientFaultId/12 Det_TransientApiId/11 Det_TransientInstanceId/10 Det_RuntimeErrorId/9 Det_RuntimeApiId/8 Det_RuntimeInstanceId/7 Det_ErrorId/6 Det_ApiId/5 Det_InstanceId/4 Det_Handler_static/3 Dio_Det_Handler_dinamic/2 Port_Det_Handler_dinamic/1
+Removing variables:
+
+Final Symbol table:
+
+Sys_GetCoreID/26 (Sys_GetCoreID) @06b677e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SEGGER_RTT_printf/25 (SEGGER_RTT_printf) @06b671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_Start/24 (Det_Start) @06b609a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Det_Start (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportTransientFault/23 (Det_ReportTransientFault) @06b60e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Det_ReportTransientFault (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportRuntimeError/22 (Det_ReportRuntimeError) @06b60b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Det_ReportRuntimeError (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportError/21 (Det_ReportError) @06b608c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Det_ReportError (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getErrorString/20 (getErrorString) @06b60620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.getErrorString (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getApiString/19 (getApiString) @06b60380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.getApiString (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getInstanceString/18 (getInstanceString) @06b600e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.getInstanceString (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getModuleString/17 (getModuleString) @06e9aee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.getModuleString (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_Init/16 (Det_Init) @06e9ac40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.Det_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_RuntimeModuleId/15 (Det_RuntimeModuleId) @06c44f78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_RuntimeModuleId (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_ModuleId/14 (Det_ModuleId) @06c44f30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_ModuleId (implicit_section)
+  Aux: @06c44f78
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_TransientModuleId/13 (Det_TransientModuleId) @06c44ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_TransientModuleId (implicit_section)
+  Aux: @06c44f30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_TransientFaultId/12 (Det_TransientFaultId) @06c44ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_TransientFaultId (implicit_section)
+  Aux: @06c44ee8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_TransientApiId/11 (Det_TransientApiId) @06c44e58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_TransientApiId (implicit_section)
+  Aux: @06c44ea0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_TransientInstanceId/10 (Det_TransientInstanceId) @06c44e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_TransientInstanceId (implicit_section)
+  Aux: @06c44e58
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_RuntimeErrorId/9 (Det_RuntimeErrorId) @06c44dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_RuntimeErrorId (implicit_section)
+  Aux: @06c44e10
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_RuntimeApiId/8 (Det_RuntimeApiId) @06c44d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_RuntimeApiId (implicit_section)
+  Aux: @06c44dc8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_RuntimeInstanceId/7 (Det_RuntimeInstanceId) @06c44d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_RuntimeInstanceId (implicit_section)
+  Aux: @06c44d80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_ErrorId/6 (Det_ErrorId) @06c44cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_ErrorId (implicit_section)
+  Aux: @06c44d38
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_ApiId/5 (Det_ApiId) @06c44ca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_ApiId (implicit_section)
+  Aux: @06c44cf0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_InstanceId/4 (Det_InstanceId) @06c44c60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.bss.Det_InstanceId (implicit_section)
+  Aux: @06c44ca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Det_Handler_static/3 (Det_Handler_static) @06c44c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.data.Det_Handler_static (implicit_section)
+  Aux: @06c44c60
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Dio_Det_Handler_dinamic/2 (Dio_Det_Handler_dinamic) @06c44b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.data.Dio_Det_Handler_dinamic (implicit_section)
+  Aux: @06c44c18
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Port_Det_Handler_dinamic/1 (Port_Det_Handler_dinamic) @06c44558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.data.Port_Det_Handler_dinamic (implicit_section)
+  Aux: @06c44b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

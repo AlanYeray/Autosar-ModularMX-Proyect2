@@ -1,0 +1,980 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Bfx_CountLeadingZeros_u8/24 Bfx_CountLeadingSigns_u8/23 Bfx_CountLeadingOnes_u8/22 Bfx_ShiftBitSat_s8s8_s8/21 Bfx_ShiftBitSat_u8s8_u8/20 Bfx_PutBit_u8u8u8/19 Bfx_PutBitsMask_u8u8u8/18 Bfx_PutBits_u8u8u8u8/17 Bfx_CopyBit_u8u8u8u8/16 Bfx_RotBitLt_u8u8/15 Bfx_RotBitRt_u8u8/14 Bfx_ShiftBitLt_u8u8/13 Bfx_ShiftBitRt_u8u8/12 Bfx_ToggleBitMask_u8u8/11 Bfx_ToggleBits_u8/10 Bfx_TstParityEven_u8_u8/9 Bfx_TstBitLnMask_u8u8_u8/8 Bfx_TstBitMask_u8u8_u8/7 Bfx_ClrBitMask_u8u8/6 Bfx_SetBitsMask_u8u8/5 Bfx_GetBits_u8u8u8_u8/4 Bfx_SetBits_u8u8u8u8/3 Bfx_GetBit_u8u8_u8/2 Bfx_ClrBit_u8u8/1 Bfx_SetBit_u8u8/0
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Bfx_CountLeadingZeros_u8/24 (Bfx_CountLeadingZeros_u8) @068a1c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingSigns_u8/23 (Bfx_CountLeadingSigns_u8) @068a19a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingOnes_u8/22 (Bfx_CountLeadingOnes_u8) @068a1700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_s8s8_s8/21 (Bfx_ShiftBitSat_s8s8_s8) @068a1460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitSat_u8s8_u8/20 (Bfx_ShiftBitSat_u8s8_u8) @068a11c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBit_u8u8u8/19 (Bfx_PutBit_u8u8u8) @0689dd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBitsMask_u8u8u8/18 (Bfx_PutBitsMask_u8u8u8) @0689d7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_PutBits_u8u8u8u8/17 (Bfx_PutBits_u8u8u8u8) @0689d2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CopyBit_u8u8u8u8/16 (Bfx_CopyBit_u8u8u8u8) @0689dee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitLt_u8u8/15 (Bfx_RotBitLt_u8u8) @0689dc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_RotBitRt_u8u8/14 (Bfx_RotBitRt_u8u8) @0689d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitLt_u8u8/13 (Bfx_ShiftBitLt_u8u8) @0689d700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ShiftBitRt_u8u8/12 (Bfx_ShiftBitRt_u8u8) @0689d460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBitMask_u8u8/11 (Bfx_ToggleBitMask_u8u8) @0689d1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ToggleBits_u8/10 (Bfx_ToggleBits_u8) @06887d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstParityEven_u8_u8/9 (Bfx_TstParityEven_u8_u8) @068877e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitLnMask_u8u8_u8/8 (Bfx_TstBitLnMask_u8u8_u8) @068872a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_TstBitMask_u8u8_u8/7 (Bfx_TstBitMask_u8u8_u8) @06887ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBitMask_u8u8/6 (Bfx_ClrBitMask_u8u8) @06887c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBitsMask_u8u8/5 (Bfx_SetBitsMask_u8u8) @068879a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBits_u8u8u8_u8/4 (Bfx_GetBits_u8u8u8_u8) @06887700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBits_u8u8u8u8/3 (Bfx_SetBits_u8u8u8u8) @06887460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_GetBit_u8u8_u8/2 (Bfx_GetBit_u8u8_u8) @068871c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_ClrBit_u8u8/1 (Bfx_ClrBit_u8u8) @06882ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_SetBit_u8u8/0 (Bfx_SetBit_u8u8) @06882e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Bfx_CountLeadingZeros_u8 (uint8_t Data)
+{
+  uint8_t count;
+  uint8_t D.5444;
+
+  <bb 2> :
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.10_1 = count;
+  count = count.10_1 + 1;
+  Data = Data << 1;
+
+  <bb 4> :
+  Data.11_2 = (signed char) Data;
+  if (Data.11_2 >= 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  D.5444 = count;
+
+  <bb 7> :
+<L4>:
+  return D.5444;
+
+}
+
+
+Bfx_CountLeadingSigns_u8 (int8_t Data)
+{
+  uint8_t count;
+  uint8_t msb;
+  uint8_t D.5441;
+
+  <bb 2> :
+  Data.8_1 = (unsigned char) Data;
+  msb = Data.8_1 >> 7;
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.9_2 = count;
+  count = count.9_2 + 1;
+  _3 = (int) Data;
+  _4 = _3 << 1;
+  Data = (int8_t) _4;
+
+  <bb 4> :
+  _5 = Data >> 6;
+  _6 = (unsigned char) _5;
+  _7 = (int) _6;
+  _8 = _7 & 1;
+  _9 = (int) msb;
+  if (_8 == _9)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count <= 6)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  D.5441 = count;
+
+  <bb 7> :
+<L4>:
+  return D.5441;
+
+}
+
+
+Bfx_CountLeadingOnes_u8 (uint8_t Data)
+{
+  uint8_t count;
+  uint8_t D.5438;
+
+  <bb 2> :
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count.6_1 = count;
+  count = count.6_1 + 1;
+  Data = Data << 1;
+
+  <bb 4> :
+  Data.7_2 = (signed char) Data;
+  if (Data.7_2 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  D.5438 = count;
+
+  <bb 7> :
+<L4>:
+  return D.5438;
+
+}
+
+
+Bfx_ShiftBitSat_s8s8_s8 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint8_t result;
+  int8_t D.5435;
+
+  <bb 2> :
+  if (ShitfCnt > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt > 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data;
+  _2 = (int) ShitfCnt;
+  _3 = _1 >> _2;
+  result = (uint8_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt < -7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result = 255;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data;
+  _5 = (int) ShitfCnt;
+  _6 = -_5;
+  _7 = _4 << _6;
+  result = (uint8_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result = Data;
+
+  <bb 11> :
+  D.5435 = (int8_t) result;
+
+  <bb 12> :
+<L12>:
+  return D.5435;
+
+}
+
+
+Bfx_ShiftBitSat_u8s8_u8 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint8_t result;
+  uint8_t D.5421;
+
+  <bb 2> :
+  if (ShitfCnt > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt > 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data;
+  _2 = (int) ShitfCnt;
+  _3 = _1 >> _2;
+  result = (uint8_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt < -7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result = 255;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data;
+  _5 = (int) ShitfCnt;
+  _6 = -_5;
+  _7 = _4 << _6;
+  result = (uint8_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result = Data;
+
+  <bb 11> :
+  D.5421 = result;
+
+  <bb 12> :
+<L12>:
+  return D.5421;
+
+}
+
+
+Bfx_PutBit_u8u8u8 (uint8_t * Data, uint8_t BitPn, _Bool Status)
+{
+  uint8_t mask;
+
+  <bb 2> :
+  _1 = (int) BitPn;
+  _2 = 1 << _1;
+  mask = (uint8_t) _2;
+  if (Status != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = *Data;
+  _4 = mask | _3;
+  *Data = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = *Data;
+  _6 = (signed char) _5;
+  mask.5_7 = (signed char) mask;
+  _8 = ~mask.5_7;
+  _9 = _6 & _8;
+  _10 = (unsigned char) _9;
+  *Data = _10;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_PutBitsMask_u8u8u8 (uint8_t * Data, uint8_t Pattern, uint8_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (signed char) _1;
+  Mask.4_3 = (signed char) Mask;
+  _4 = ~Mask.4_3;
+  _5 = _2 & _4;
+  _6 = Pattern & Mask;
+  _7 = (signed char) _6;
+  _8 = _5 | _7;
+  _9 = (unsigned char) _8;
+  *Data = _9;
+  return;
+
+}
+
+
+Bfx_PutBits_u8u8u8u8 (uint8_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Pattern)
+{
+  uint8_t Mask;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn;
+  _5 = _3 << _4;
+  Mask = (uint8_t) _5;
+  _6 = *Data;
+  _7 = (signed char) _6;
+  Mask.2_8 = (signed char) Mask;
+  _9 = ~Mask.2_8;
+  _10 = _7 & _9;
+  _11 = (unsigned char) _10;
+  *Data = _11;
+  _12 = *Data;
+  _13 = (signed char) _12;
+  _14 = (int) Pattern;
+  _15 = (int) BitStartPn;
+  _16 = _14 << _15;
+  _17 = (signed char) _16;
+  Mask.3_18 = (signed char) Mask;
+  _19 = _17 & Mask.3_18;
+  _20 = _13 | _19;
+  _21 = (unsigned char) _20;
+  *Data = _21;
+  return;
+
+}
+
+
+Bfx_CopyBit_u8u8u8u8 (uint8_t * DestinationData, uint8_t DestinationPosition, uint8_t SourceData, uint8_t SourcePosition)
+{
+  uint8_t sourceBit;
+
+  <bb 2> :
+  _1 = (int) SourceData;
+  _2 = (int) SourcePosition;
+  _3 = _1 >> _2;
+  _4 = (unsigned char) _3;
+  sourceBit = _4 & 1;
+  _5 = *DestinationData;
+  _6 = (signed char) _5;
+  _7 = (int) DestinationPosition;
+  _8 = 1 << _7;
+  _9 = (signed char) _8;
+  _10 = ~_9;
+  _11 = _6 & _10;
+  _12 = (unsigned char) _11;
+  *DestinationData = _12;
+  _13 = *DestinationData;
+  _14 = (signed char) _13;
+  _15 = (int) sourceBit;
+  _16 = (int) DestinationPosition;
+  _17 = _15 << _16;
+  _18 = (signed char) _17;
+  _19 = _14 | _18;
+  _20 = (unsigned char) _19;
+  *DestinationData = _20;
+  return;
+
+}
+
+
+Bfx_RotBitLt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  ShiftCnt = ShiftCnt & 7;
+  _1 = *Data;
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt;
+  _4 = _2 << _3;
+  _5 = (signed char) _4;
+  _6 = *Data;
+  _7 = (int) _6;
+  _8 = (int) ShiftCnt;
+  _9 = 8 - _8;
+  _10 = _7 >> _9;
+  _11 = (signed char) _10;
+  _12 = _5 | _11;
+  _13 = (unsigned char) _12;
+  *Data = _13;
+  return;
+
+}
+
+
+Bfx_RotBitRt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  ShiftCnt = ShiftCnt & 7;
+  _1 = *Data;
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt;
+  _4 = _2 >> _3;
+  _5 = (signed char) _4;
+  _6 = *Data;
+  _7 = (int) _6;
+  _8 = (int) ShiftCnt;
+  _9 = 8 - _8;
+  _10 = _7 << _9;
+  _11 = (signed char) _10;
+  _12 = _5 | _11;
+  _13 = (unsigned char) _12;
+  *Data = _13;
+  return;
+
+}
+
+
+Bfx_ShiftBitLt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  if (ShiftCnt <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data;
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt;
+  _4 = _2 << _3;
+  _5 = (unsigned char) _4;
+  *Data = _5;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ShiftBitRt_u8u8 (uint8_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  if (ShiftCnt <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data;
+  _2 = (int) _1;
+  _3 = (int) ShiftCnt;
+  _4 = _2 >> _3;
+  _5 = (unsigned char) _4;
+  *Data = _5;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ToggleBitMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = Mask ^ _1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_ToggleBits_u8 (uint8_t * Data)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = ~_1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_TstParityEven_u8_u8 (uint8_t Data)
+{
+  uint8_t count;
+  _Bool D.5398;
+
+  <bb 2> :
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Data & 1;
+  count = count + _1;
+  Data = Data >> 1;
+
+  <bb 4> :
+  if (Data != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = count & 1;
+  if (_2 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  D.5398 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  D.5398 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 8> :
+<L5>:
+  return D.5398;
+
+}
+
+
+Bfx_TstBitLnMask_u8u8_u8 (uint8_t Data, uint8_t Mask)
+{
+  _Bool D.5394;
+
+  <bb 2> :
+  _1 = Data & Mask;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5394 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5394 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5394;
+
+}
+
+
+Bfx_TstBitMask_u8u8_u8 (uint8_t Data, uint8_t Mask)
+{
+  _Bool D.5390;
+
+  <bb 2> :
+  _1 = Data & Mask;
+  if (Mask == _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5390 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5390 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5390;
+
+}
+
+
+Bfx_ClrBitMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (signed char) _1;
+  Mask.1_3 = (signed char) Mask;
+  _4 = ~Mask.1_3;
+  _5 = _2 & _4;
+  _6 = (unsigned char) _5;
+  *Data = _6;
+  return;
+
+}
+
+
+Bfx_SetBitsMask_u8u8 (uint8_t * Data, uint8_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = Mask | _1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_GetBits_u8u8u8_u8 (uint8_t Data, uint8_t BitStartPn, uint8_t BitLn)
+{
+  uint8_t mask;
+  uint8_t D.5386;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = (unsigned char) _2;
+  mask = _3 + 255;
+  _4 = (int) mask;
+  _5 = (int) BitStartPn;
+  _6 = _4 << _5;
+  mask = (uint8_t) _6;
+  _7 = Data & mask;
+  _8 = (int) _7;
+  _9 = (int) BitStartPn;
+  _10 = _8 >> _9;
+  D.5386 = (uint8_t) _10;
+
+  <bb 3> :
+<L0>:
+  return D.5386;
+
+}
+
+
+Bfx_SetBits_u8u8u8u8 (uint8_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Status)
+{
+  uint8_t mask;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn;
+  _5 = _3 << _4;
+  mask = (uint8_t) _5;
+  if (Status != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = *Data;
+  _7 = mask | _6;
+  *Data = _7;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = *Data;
+  _9 = (signed char) _8;
+  mask.0_10 = (signed char) mask;
+  _11 = ~mask.0_10;
+  _12 = _9 & _11;
+  _13 = (unsigned char) _12;
+  *Data = _13;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_GetBit_u8u8_u8 (uint8_t * Data, uint8_t BitPn)
+{
+  _Bool D.5381;
+
+  <bb 2> :
+  _1 = *Data;
+  _2 = (int) _1;
+  _3 = (int) BitPn;
+  _4 = _2 >> _3;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5381 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5381 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5381;
+
+}
+
+
+Bfx_ClrBit_u8u8 (uint8_t * Data, uint8_t BitPn)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (signed char) _1;
+  _3 = (int) BitPn;
+  _4 = 1 << _3;
+  _5 = (signed char) _4;
+  _6 = ~_5;
+  _7 = _2 & _6;
+  _8 = (unsigned char) _7;
+  *Data = _8;
+  return;
+
+}
+
+
+Bfx_SetBit_u8u8 (uint8_t * Data, uint8_t BitPn)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (signed char) _1;
+  _3 = (int) BitPn;
+  _4 = 1 << _3;
+  _5 = (signed char) _4;
+  _6 = _2 | _5;
+  _7 = (unsigned char) _6;
+  *Data = _7;
+  return;
+
+}
+
+

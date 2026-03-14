@@ -1,0 +1,658 @@
+Bfx_CountLeadingZeros_u32 (uint8_t Data)
+{
+  uint32_t count;
+  uint32_t D.5443;
+
+  <bb 2> :
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count = count + 1;
+  Data = Data << 1;
+
+  <bb 4> :
+  if (count <= 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  D.5443 = count;
+
+  <bb 6> :
+<L3>:
+  return D.5443;
+
+}
+
+
+Bfx_CountLeadingSigns_s32 (int32_t Data)
+{
+  uint32_t count;
+  uint32_t msb;
+  uint32_t D.5441;
+
+  <bb 2> :
+  Data.0_1 = (unsigned int) Data;
+  msb = Data.0_1 >> 31;
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count = count + 1;
+  Data = Data << 1;
+
+  <bb 4> :
+  _2 = Data >> 30;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 1;
+  if (msb == _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count <= 30)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  D.5441 = count;
+
+  <bb 7> :
+<L4>:
+  return D.5441;
+
+}
+
+
+Bfx_CountLeadingOnes_u32 (uint32_t Data)
+{
+  uint32_t temp;
+  uint32_t count;
+  uint32_t D.5438;
+
+  <bb 2> :
+  count = 0;
+  temp = Data;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count = count + 1;
+  temp = temp >> 1;
+
+  <bb 4> :
+  _1 = temp & 1;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  D.5438 = count;
+
+  <bb 6> :
+<L3>:
+  return D.5438;
+
+}
+
+
+Bfx_ShiftBitSat_s32s8_s32 (int32_t ShitfCnt, int8_t Data)
+{
+  uint32_t result;
+  int32_t D.5436;
+
+  <bb 2> :
+  if (ShitfCnt > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt > 20)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data;
+  _2 = _1 >> ShitfCnt;
+  result = (uint32_t) _2;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _3 = (int) Data;
+  _4 = -ShitfCnt;
+  _5 = _3 << _4;
+  result = (uint32_t) _5;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result = (uint32_t) Data;
+
+  <bb 11> :
+  D.5436 = (int32_t) result;
+
+  <bb 12> :
+<L12>:
+  return D.5436;
+
+}
+
+
+Bfx_ShiftBitSat_u32s8_u32 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint32_t result;
+  uint32_t D.5422;
+
+  <bb 2> :
+  if (ShitfCnt > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt > 31)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data;
+  _2 = (int) ShitfCnt;
+  _3 = _1 >> _2;
+  result = (uint32_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data;
+  _5 = (int) ShitfCnt;
+  _6 = -_5;
+  _7 = _4 << _6;
+  result = (uint32_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result = (uint32_t) Data;
+
+  <bb 11> :
+  D.5422 = result;
+
+  <bb 12> :
+<L12>:
+  return D.5422;
+
+}
+
+
+Bfx_PutBit_u32u8u8 (uint32_t * Data, uint8_t BitPn, _Bool Status)
+{
+  uint32_t mask;
+
+  <bb 2> :
+  _1 = (int) BitPn;
+  _2 = 1 << _1;
+  mask = (uint32_t) _2;
+  if (Status != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = *Data;
+  _4 = mask | _3;
+  *Data = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = *Data;
+  _6 = ~mask;
+  _7 = _5 & _6;
+  *Data = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_PutBitsMask_u32u32u32 (uint32_t * Data, uint32_t Pattern, uint32_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = ~Mask;
+  _3 = _1 & _2;
+  _4 = Pattern & Mask;
+  _5 = _3 | _4;
+  *Data = _5;
+  return;
+
+}
+
+
+Bfx_PutBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint32_t Pattern)
+{
+  uint32_t Mask;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn;
+  _5 = _3 << _4;
+  Mask = (uint32_t) _5;
+  _6 = *Data;
+  _7 = ~Mask;
+  _8 = _6 & _7;
+  *Data = _8;
+  _9 = *Data;
+  _10 = (int) BitStartPn;
+  _11 = Pattern << _10;
+  _12 = Mask & _11;
+  _13 = _9 | _12;
+  *Data = _13;
+  return;
+
+}
+
+
+Bfx_CopyBit_u32u8u32u8 (uint32_t * DestinationData, uint8_t DestinationPosition, uint32_t SourceData, uint8_t SourcePosition)
+{
+  uint32_t sourceBit;
+
+  <bb 2> :
+  _1 = (int) SourcePosition;
+  _2 = SourceData >> _1;
+  sourceBit = _2 & 1;
+  _3 = *DestinationData;
+  _4 = (int) DestinationPosition;
+  _5 = 1 << _4;
+  _6 = ~_5;
+  _7 = (long unsigned int) _6;
+  _8 = _3 & _7;
+  *DestinationData = _8;
+  _9 = *DestinationData;
+  _10 = (int) DestinationPosition;
+  _11 = sourceBit << _10;
+  _12 = _9 | _11;
+  *DestinationData = _12;
+  return;
+
+}
+
+
+Bfx_RotBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  ShiftCnt = ShiftCnt % 31;
+  _1 = *Data;
+  _2 = (int) ShiftCnt;
+  _3 = _1 r<< _2;
+  *Data = _3;
+  return;
+
+}
+
+
+Bfx_RotBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  ShiftCnt = ShiftCnt % 31;
+  _1 = *Data;
+  _2 = (int) ShiftCnt;
+  _3 = _1 r>> _2;
+  *Data = _3;
+  return;
+
+}
+
+
+Bfx_ShiftBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  if (ShiftCnt <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data;
+  _2 = (int) ShiftCnt;
+  _3 = _1 << _2;
+  *Data = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ShiftBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  <bb 2> :
+  if (ShiftCnt <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data;
+  _2 = (int) ShiftCnt;
+  _3 = _1 >> _2;
+  *Data = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ToggleBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = Mask ^ _1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_ToggleBits_u32 (uint32_t * Data)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = ~_1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_TstParityEven_u32_u8 (uint32_t Data)
+{
+  uint32_t count;
+  _Bool D.5399;
+
+  <bb 2> :
+  count = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Data & 1;
+  count = count + _1;
+  Data = Data >> 1;
+
+  <bb 4> :
+  if (Data != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = count & 1;
+  if (_2 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  D.5399 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  D.5399 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 8> :
+<L5>:
+  return D.5399;
+
+}
+
+
+Bfx_TstBitLnMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5395;
+
+  <bb 2> :
+  _1 = Data & Mask;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5395 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5395 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5395;
+
+}
+
+
+Bfx_TstBitMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5391;
+
+  <bb 2> :
+  _1 = Data & Mask;
+  if (Mask == _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5391 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5391 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5391;
+
+}
+
+
+Bfx_ClrBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = ~Mask;
+  _3 = _1 & _2;
+  *Data = _3;
+  return;
+
+}
+
+
+Bfx_SetBitsMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = Mask | _1;
+  *Data = _2;
+  return;
+
+}
+
+
+Bfx_GetBits_u32u8u8_u8 (uint32_t Data, uint8_t BitStartPn, uint8_t BitLn)
+{
+  uint32_t mask;
+  uint32_t D.5387;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  mask = (uint32_t) _3;
+  _4 = (int) BitStartPn;
+  mask = mask << _4;
+  _5 = Data & mask;
+  _6 = (int) BitStartPn;
+  D.5387 = _5 >> _6;
+
+  <bb 3> :
+<L0>:
+  return D.5387;
+
+}
+
+
+Bfx_SetBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Status)
+{
+  uint32_t mask;
+
+  <bb 2> :
+  _1 = (int) BitLn;
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn;
+  _5 = _3 << _4;
+  mask = (uint32_t) _5;
+  if (Status != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = *Data;
+  _7 = mask | _6;
+  *Data = _7;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = *Data;
+  _9 = ~mask;
+  _10 = _8 & _9;
+  *Data = _10;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_GetBit_u32u8_u8 (uint32_t Data, uint8_t BitPn)
+{
+  _Bool D.5382;
+
+  <bb 2> :
+  _1 = (int) BitPn;
+  _2 = 1 << _1;
+  _3 = (long unsigned int) _2;
+  _4 = Data & _3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5382 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5382 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.5382;
+
+}
+
+
+Bfx_ClrBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (int) BitPn;
+  _3 = 1 << _2;
+  _4 = ~_3;
+  _5 = (long unsigned int) _4;
+  _6 = _1 & _5;
+  *Data = _6;
+  return;
+
+}
+
+
+Bfx_SetBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  <bb 2> :
+  _1 = *Data;
+  _2 = (int) BitPn;
+  _3 = 1 << _2;
+  _4 = (long unsigned int) _3;
+  _5 = _1 | _4;
+  *Data = _5;
+  return;
+
+}
+
+

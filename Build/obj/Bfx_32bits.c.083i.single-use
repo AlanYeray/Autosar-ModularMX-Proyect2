@@ -1,0 +1,811 @@
+Bfx_CountLeadingZeros_u32 (uint8_t Data)
+{
+  uint32_t count;
+  uint32_t D.5443;
+  uint32_t _5;
+
+  <bb 2> :
+  count_3 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_7 = count_2 + 1;
+  Data_8 = Data_1 << 1;
+
+  <bb 4> :
+  # Data_1 = PHI <Data_4(D)(2), Data_8(3)>
+  # count_2 = PHI <count_3(2), count_7(3)>
+  if (count_2 <= 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _5 = count_2;
+
+  <bb 6> :
+<L3>:
+  return _5;
+
+}
+
+
+Bfx_CountLeadingSigns_s32 (int32_t Data)
+{
+  uint32_t count;
+  uint32_t msb;
+  uint32_t D.5441;
+  unsigned int Data.0_1;
+  long int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32_t _12;
+
+  <bb 2> :
+  Data.0_1 = (unsigned int) Data_7(D);
+  msb_8 = Data.0_1 >> 31;
+  count_9 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_10 = count_6 + 1;
+  Data_11 = Data_5 << 1;
+
+  <bb 4> :
+  # Data_5 = PHI <Data_7(D)(2), Data_11(3)>
+  # count_6 = PHI <count_9(2), count_10(3)>
+  _2 = Data_5 >> 30;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 1;
+  if (msb_8 == _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (count_6 <= 30)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _12 = count_6;
+
+  <bb 7> :
+<L4>:
+  return _12;
+
+}
+
+
+Bfx_CountLeadingOnes_u32 (uint32_t Data)
+{
+  uint32_t temp;
+  uint32_t count;
+  uint32_t D.5438;
+  long unsigned int _1;
+  uint32_t _7;
+
+  <bb 2> :
+  count_4 = 0;
+  temp_6 = Data_5(D);
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  count_9 = count_2 + 1;
+  temp_10 = temp_3 >> 1;
+
+  <bb 4> :
+  # count_2 = PHI <count_4(2), count_9(3)>
+  # temp_3 = PHI <temp_6(2), temp_10(3)>
+  _1 = temp_3 & 1;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _7 = count_2;
+
+  <bb 6> :
+<L3>:
+  return _7;
+
+}
+
+
+Bfx_ShiftBitSat_s32s8_s32 (int32_t ShitfCnt, int8_t Data)
+{
+  uint32_t result;
+  int32_t D.5436;
+  int _1;
+  int _2;
+  int _3;
+  long int _4;
+  int _5;
+  int32_t _14;
+
+  <bb 2> :
+  if (ShitfCnt_7(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_7(D) > 20)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_13 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_8(D);
+  _2 = _1 >> ShitfCnt_7(D);
+  result_12 = (uint32_t) _2;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_7(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_7(D) < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_11 = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _3 = (int) Data_8(D);
+  _4 = -ShitfCnt_7(D);
+  _5 = _3 << _4;
+  result_10 = (uint32_t) _5;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_9 = (uint32_t) Data_8(D);
+
+  <bb 11> :
+  # result_6 = PHI <result_12(5), result_10(9), result_9(10), result_13(4), result_11(8)>
+  _14 = (int32_t) result_6;
+
+  <bb 12> :
+<L12>:
+  return _14;
+
+}
+
+
+Bfx_ShiftBitSat_u32s8_u32 (int8_t ShitfCnt, uint8_t Data)
+{
+  uint32_t result;
+  uint32_t D.5422;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  uint32_t _16;
+
+  <bb 2> :
+  if (ShitfCnt_9(D) > 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (ShitfCnt_9(D) > 31)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  result_15 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  _1 = (int) Data_10(D);
+  _2 = (int) ShitfCnt_9(D);
+  _3 = _1 >> _2;
+  result_14 = (uint32_t) _3;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  if (ShitfCnt_9(D) < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (ShitfCnt_9(D) < -31)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  result_13 = 4294967295;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _4 = (int) Data_10(D);
+  _5 = (int) ShitfCnt_9(D);
+  _6 = -_5;
+  _7 = _4 << _6;
+  result_12 = (uint32_t) _7;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  result_11 = (uint32_t) Data_10(D);
+
+  <bb 11> :
+  # result_8 = PHI <result_14(5), result_12(9), result_11(10), result_15(4), result_13(8)>
+  _16 = result_8;
+
+  <bb 12> :
+<L12>:
+  return _16;
+
+}
+
+
+Bfx_PutBit_u32u8u8 (uint32_t * Data, uint8_t BitPn, _Bool Status)
+{
+  uint32_t mask;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  _1 = (int) BitPn_9(D);
+  _2 = 1 << _1;
+  mask_10 = (uint32_t) _2;
+  if (Status_11(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = *Data_13(D);
+  _4 = mask_10 | _3;
+  *Data_13(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = *Data_13(D);
+  _6 = ~mask_10;
+  _7 = _5 & _6;
+  *Data_13(D) = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_PutBitsMask_u32u32u32 (uint32_t * Data, uint32_t Pattern, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  _1 = *Data_7(D);
+  _2 = ~Mask_8(D);
+  _3 = _1 & _2;
+  _4 = Pattern_9(D) & Mask_8(D);
+  _5 = _3 | _4;
+  *Data_7(D) = _5;
+  return;
+
+}
+
+
+Bfx_PutBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint32_t Pattern)
+{
+  uint32_t Mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+
+  <bb 2> :
+  _1 = (int) BitLn_14(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_15(D);
+  _5 = _3 << _4;
+  Mask_16 = (uint32_t) _5;
+  _6 = *Data_18(D);
+  _7 = ~Mask_16;
+  _8 = _6 & _7;
+  *Data_18(D) = _8;
+  _9 = *Data_18(D);
+  _10 = (int) BitStartPn_15(D);
+  _11 = Pattern_20(D) << _10;
+  _12 = Mask_16 & _11;
+  _13 = _9 | _12;
+  *Data_18(D) = _13;
+  return;
+
+}
+
+
+Bfx_CopyBit_u32u8u32u8 (uint32_t * DestinationData, uint8_t DestinationPosition, uint32_t SourceData, uint8_t SourcePosition)
+{
+  uint32_t sourceBit;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  int _4;
+  int _5;
+  int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+
+  <bb 2> :
+  _1 = (int) SourcePosition_13(D);
+  _2 = SourceData_14(D) >> _1;
+  sourceBit_15 = _2 & 1;
+  _3 = *DestinationData_17(D);
+  _4 = (int) DestinationPosition_18(D);
+  _5 = 1 << _4;
+  _6 = ~_5;
+  _7 = (long unsigned int) _6;
+  _8 = _3 & _7;
+  *DestinationData_17(D) = _8;
+  _9 = *DestinationData_17(D);
+  _10 = (int) DestinationPosition_18(D);
+  _11 = sourceBit_15 << _10;
+  _12 = _9 | _11;
+  *DestinationData_17(D) = _12;
+  return;
+
+}
+
+
+Bfx_RotBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  ShiftCnt_5 = ShiftCnt_4(D) % 31;
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5;
+  _3 = _1 r<< _2;
+  *Data_7(D) = _3;
+  return;
+
+}
+
+
+Bfx_RotBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  ShiftCnt_5 = ShiftCnt_4(D) % 31;
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5;
+  _3 = _1 r>> _2;
+  *Data_7(D) = _3;
+  return;
+
+}
+
+
+Bfx_ShiftBitLt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  if (ShiftCnt_5(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5(D);
+  _3 = _1 << _2;
+  *Data_7(D) = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_7(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ShiftBitRt_u32u8 (uint32_t * Data, uint8_t ShiftCnt)
+{
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  if (ShiftCnt_5(D) <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = *Data_7(D);
+  _2 = (int) ShiftCnt_5(D);
+  _3 = _1 >> _2;
+  *Data_7(D) = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *Data_7(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_ToggleBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) ^ _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_ToggleBits_u32 (uint32_t * Data)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = ~_1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_TstParityEven_u32_u8 (uint32_t Data)
+{
+  uint32_t count;
+  _Bool D.5399;
+  long unsigned int _1;
+  long unsigned int _2;
+  _Bool _5;
+  _Bool _8;
+  _Bool _9;
+
+  <bb 2> :
+  count_6 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Data_3 & 1;
+  count_11 = count_4 + _1;
+  Data_12 = Data_3 >> 1;
+
+  <bb 4> :
+  # Data_3 = PHI <Data_7(D)(2), Data_12(3)>
+  # count_4 = PHI <count_6(2), count_11(3)>
+  if (Data_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = count_4 & 1;
+  if (_2 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 8> :
+  # _5 = PHI <_9(6), _8(7)>
+<L5>:
+  return _5;
+
+}
+
+
+Bfx_TstBitLnMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5395;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+Bfx_TstBitMask_u32u32_u8 (uint32_t Data, uint32_t Mask)
+{
+  _Bool D.5391;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = Data_3(D) & Mask_4(D);
+  if (Mask_4(D) == _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _2 = PHI <_6(3), _5(4)>
+<L2>:
+  return _2;
+
+}
+
+
+Bfx_ClrBitMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  _1 = *Data_5(D);
+  _2 = ~Mask_6(D);
+  _3 = _1 & _2;
+  *Data_5(D) = _3;
+  return;
+
+}
+
+
+Bfx_SetBitsMask_u32u32 (uint32_t * Data, uint32_t Mask)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 = *Data_4(D);
+  _2 = Mask_5(D) | _1;
+  *Data_4(D) = _2;
+  return;
+
+}
+
+
+Bfx_GetBits_u32u8u8_u8 (uint32_t Data, uint8_t BitStartPn, uint8_t BitLn)
+{
+  uint32_t mask;
+  uint32_t D.5387;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  long unsigned int _5;
+  int _6;
+  uint32_t _12;
+
+  <bb 2> :
+  _1 = (int) BitLn_7(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  mask_8 = (uint32_t) _3;
+  _4 = (int) BitStartPn_9(D);
+  mask_10 = mask_8 << _4;
+  _5 = Data_11(D) & mask_10;
+  _6 = (int) BitStartPn_9(D);
+  _12 = _5 >> _6;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+Bfx_SetBits_u32u8u8u8 (uint32_t * Data, uint8_t BitStartPn, uint8_t BitLn, uint8_t Status)
+{
+  uint32_t mask;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+
+  <bb 2> :
+  _1 = (int) BitLn_12(D);
+  _2 = 1 << _1;
+  _3 = _2 + -1;
+  _4 = (int) BitStartPn_13(D);
+  _5 = _3 << _4;
+  mask_14 = (uint32_t) _5;
+  if (Status_15(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = *Data_17(D);
+  _7 = mask_14 | _6;
+  *Data_17(D) = _7;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = *Data_17(D);
+  _9 = ~mask_14;
+  _10 = _8 & _9;
+  *Data_17(D) = _10;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Bfx_GetBit_u32u8_u8 (uint32_t Data, uint8_t BitPn)
+{
+  _Bool D.5382;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _8;
+  _Bool _9;
+
+  <bb 2> :
+  _1 = (int) BitPn_6(D);
+  _2 = 1 << _1;
+  _3 = (long unsigned int) _2;
+  _4 = Data_7(D) & _3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _9 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+  # _5 = PHI <_9(3), _8(4)>
+<L2>:
+  return _5;
+
+}
+
+
+Bfx_ClrBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  long unsigned int _1;
+  int _2;
+  int _3;
+  int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  _1 = *Data_8(D);
+  _2 = (int) BitPn_9(D);
+  _3 = 1 << _2;
+  _4 = ~_3;
+  _5 = (long unsigned int) _4;
+  _6 = _1 & _5;
+  *Data_8(D) = _6;
+  return;
+
+}
+
+
+Bfx_SetBit_u32u8 (uint32_t * Data, uint8_t BitPn)
+{
+  long unsigned int _1;
+  int _2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  _1 = *Data_7(D);
+  _2 = (int) BitPn_8(D);
+  _3 = 1 << _2;
+  _4 = (long unsigned int) _3;
+  _5 = _1 | _4;
+  *Data_7(D) = _5;
+  return;
+
+}
+
+

@@ -1,0 +1,564 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+OsIf_GetElapsed/46 (OsIf_GetElapsed) @07516540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_GetCounter/45 (OsIf_GetCounter) @07516460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+OsIf_MicrosToTicks/44 (OsIf_MicrosToTicks) @07516380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Delay/13 
+  Calls: 
+HwIoAb_Buzzer_Beep/43 (HwIoAb_Buzzer_Beep) @075160e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+BuzzerControl/42 (BuzzerControl) @07513900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buzzer_Stop/41 (HwIoAb_Buzzer_Stop) @07516000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+Dio_ReadChannel/40 (Dio_ReadChannel) @07512ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetAltValue/39 (HwIoAb_Pots_GetAltValue) @07512d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+SEGGER_RTT_printf/38 (SEGGER_RTT_printf) @07512c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: callback_timer/12 Os_Task_leds/11 Os_Task_leds/11 
+  Calls: 
+HwIoAb_Pots_GetValue/37 (HwIoAb_Pots_GetValue) @07512b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Leds_TurnToggle/36 (HwIoAb_Leds_TurnToggle) @07512a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+HwIoAb_Buttons_GetEvent/35 (HwIoAb_Buttons_GetEvent) @075129a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_Task_leds/11 
+  Calls: 
+stBtnMachine/34 (stBtnMachine) @07513678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) Os_Task_leds/11 (read) 
+  Availability: not_available
+  Varpool flags:
+HwIoAb_Buttons_MainFunction/33 (HwIoAb_Buttons_MainFunction) @075127e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Os_10ms_Task/10 
+  Calls: 
+IoHwAb_Init0/32 (IoHwAb_Init0) @07512620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Pwm_Config/31 (Pwm_Config) @073f7e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Pwm_Init/30 (Pwm_Init) @07512460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Adc_Config/29 (Adc_Config) @073f7dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Adc_Init/28 (Adc_Init) @07512380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Port_Config/27 (Port_Config) @073f7d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Init/26 (OsIf_Init) @075122a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Gpt_Config/25 (Gpt_Config) @073f7c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Init/24 (Gpt_Init) @075121c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Platform_Init/23 (Platform_Init) @075120e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_SetMode/22 (Mcu_SetMode) @07512000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_InitClock/21 (Mcu_InitClock) @073f5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Mcu_Config/20 (Mcu_Config) @073f7af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: EcuM_Init/9 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Mcu_Init/19 (Mcu_Init) @073f52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: EcuM_Init/9 
+  Calls: 
+Scheduler_MainFunction/18 (Scheduler_MainFunction) @073f5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Port_Init/17 (Port_Init) @073f5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 EcuM_Init/9 
+  Calls: 
+Scheduler_Config/16 (Scheduler_Config) @073f7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main/8 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Scheduler_Init/15 (Scheduler_Init) @073f5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+SEGGER_RTT_Init/14 (SEGGER_RTT_Init) @073f5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/8 
+  Calls: 
+Delay/13 (Delay) @073f5700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/46 OsIf_GetCounter/45 OsIf_MicrosToTicks/44 
+callback_timer/12 (callback_timer) @073f5460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SEGGER_RTT_printf/38 
+Os_Task_leds/11 (Os_Task_leds) @073f51c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) stBtnMachine/34 (read) BuzzerControl/42 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Beep/43 HwIoAb_Buzzer_Stop/41 Dio_ReadChannel/40 SEGGER_RTT_printf/38 HwIoAb_Pots_GetAltValue/39 SEGGER_RTT_printf/38 HwIoAb_Pots_GetValue/37 HwIoAb_Leds_TurnToggle/36 HwIoAb_Buttons_GetEvent/35 
+Os_10ms_Task/10 (Os_10ms_Task) @073f0c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buttons_MainFunction/33 
+EcuM_Init/9 (EcuM_Init) @073f0e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcu_Config/20 (addr) Gpt_Config/25 (addr) Port_Config/27 (addr) Adc_Config/29 (addr) Pwm_Config/31 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: main/8 
+  Calls: IoHwAb_Init0/32 Pwm_Init/30 Adc_Init/28 Port_Init/17 OsIf_Init/26 Gpt_Init/24 Platform_Init/23 Mcu_SetMode/22 Mcu_InitClock/21 Mcu_Init/19 
+main/8 (main) @073f0b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Scheduler_Config/16 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Scheduler_MainFunction/18 Port_Init/17 Scheduler_Init/15 SEGGER_RTT_Init/14 EcuM_Init/9 
+Delay (uint32 ms)
+{
+  uint32 ElapsedTime;
+  uint32 SeedTick;
+  uint32 Timeout;
+  long unsigned int D.8839;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _13;
+
+  <bb 2> :
+  _1 = ms_5(D) * 1000;
+  Timeout_8 = OsIf_MicrosToTicks (_1, 1);
+  _2 = OsIf_GetCounter (1);
+  SeedTick = _2;
+  ElapsedTime_11 = 0;
+
+  <bb 3> :
+  # ElapsedTime_3 = PHI <ElapsedTime_11(2), ElapsedTime_14(3)>
+  _13 = OsIf_GetElapsed (&SeedTick, 1);
+  ElapsedTime_14 = _13 + ElapsedTime_3;
+  if (ElapsedTime_14 < Timeout_8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  SeedTick ={v} {CLOBBER};
+  return;
+
+}
+
+
+callback_timer ()
+{
+  <bb 2> :
+  SEGGER_RTT_printf (0, "timer 300ms done \n");
+  return;
+
+}
+
+
+Os_Task_leds ()
+{
+  uint16 dataAdc1;
+  uint16 dataAdc[2];
+  uint8 buttonEvent;
+  uint8 i;
+  int _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  int _5;
+  unsigned char _6;
+  short unsigned int _7;
+  int _8;
+  int _9;
+  unsigned char _10;
+  short unsigned int dataAdc1.0_11;
+  int _12;
+  int _13;
+  unsigned char _14;
+  short unsigned int _15;
+  unsigned char _16;
+  int _17;
+  unsigned char _18;
+  short unsigned int _19;
+  unsigned char i.1_20;
+
+  <bb 2> :
+  i_25 = 0;
+  goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_21;
+  _2 = stBtnMachine[_1].Button;
+  buttonEvent_28 = HwIoAb_Buttons_GetEvent (_2);
+  if (buttonEvent_28 == 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = (int) i_21;
+  _4 = stBtnMachine[_3].Led;
+  HwIoAb_Leds_TurnToggle (_4);
+  goto <bb 15>; [INV]
+
+  <bb 5> :
+  if (buttonEvent_28 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _5 = (int) i_21;
+  _6 = stBtnMachine[_5].Button;
+  if (_6 == 140)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  HwIoAb_Pots_GetValue (&dataAdc);
+  _7 = dataAdc[1];
+  _8 = (int) _7;
+  SEGGER_RTT_printf (0, "Adc0 value: %d \n", _8);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  _9 = (int) i_21;
+  _10 = stBtnMachine[_9].Button;
+  if (_10 == 113)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  HwIoAb_Pots_GetAltValue (&dataAdc1);
+  dataAdc1.0_11 = dataAdc1;
+  _12 = (int) dataAdc1.0_11;
+  SEGGER_RTT_printf (0, "Adc1 value: %d \n", _12);
+
+  <bb 10> :
+  dataAdc ={v} {CLOBBER};
+  dataAdc1 ={v} {CLOBBER};
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  if (buttonEvent_28 == 3)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 12> :
+  _13 = (int) i_21;
+  _14 = stBtnMachine[_13].Button;
+  _15 = (short unsigned int) _14;
+  _16 = Dio_ReadChannel (_15);
+  if (_16 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  HwIoAb_Buzzer_Stop ();
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  _17 = (int) i_21;
+  _18 = BuzzerControl[_17].tone;
+  _19 = (short unsigned int) _18;
+  HwIoAb_Buzzer_Beep (_19);
+
+  <bb 15> :
+  i.1_20 = i_21;
+  i_39 = i.1_20 + 1;
+
+  <bb 16> :
+  # i_21 = PHI <i_25(2), i_39(15)>
+  if (i_21 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  return;
+
+}
+
+
+Os_10ms_Task ()
+{
+  <bb 2> :
+  HwIoAb_Buttons_MainFunction ();
+  return;
+
+}
+
+
+EcuM_Init ()
+{
+  <bb 2> :
+  Mcu_Init (&Mcu_Config);
+  Mcu_InitClock (0);
+  Mcu_SetMode (0);
+  Platform_Init (0B);
+  Gpt_Init (&Gpt_Config);
+  OsIf_Init (0B);
+  Port_Init (&Port_Config);
+  Adc_Init (&Adc_Config);
+  Pwm_Init (&Pwm_Config);
+  IoHwAb_Init0 (0B);
+  return;
+
+}
+
+
+main ()
+{
+  int D.8821;
+
+  <bb 2> :
+  EcuM_Init ();
+  SEGGER_RTT_Init ();
+  Scheduler_Init (&Scheduler_Config);
+  Port_Init (0B);
+  Scheduler_MainFunction ();
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+}
+
+

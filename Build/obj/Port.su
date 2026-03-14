@@ -1,0 +1,9 @@
+Autosar/Mcal/Port/src/Port.c:165:6:Port_Init	24	static
+Autosar/Mcal/Port/src/Port.c:223:6:Port_SetPinDirection	24	static
+Autosar/Mcal/Port/src/Port.c:275:6:Port_Set2PinsDirection	32	static
+Autosar/Mcal/Port/src/Port.c:328:6:Port_SetPinMode	24	static
+Autosar/Mcal/Port/src/Port.c:372:6:Port_RefreshPortDirection	16	static
+Autosar/Mcal/Port/src/Port.c:409:6:Port_GetVersionInfo	16	static
+Autosar/Mcal/Port/src/Port.c:440:6:Port_SetAsUnusedPin	16	static
+Autosar/Mcal/Port/src/Port.c:466:6:Port_SetAsUsedPin	16	static
+Autosar/Mcal/Port/src/Port.c:496:6:Port_ResetPinMode	16	static

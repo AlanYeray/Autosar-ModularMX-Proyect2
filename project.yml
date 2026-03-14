@@ -1,0 +1,43 @@
+:project:
+  :build_root: Build/ceedling/  # Directory where ceedling will place its output
+  :release_build: TRUE
+:paths:
+  :test:
+    - Test/**     # directory where the unit testing are
+  :source:
+    - Autosar/Bfx/**   # directory where the functions to test are
+:plugins: 
+  :load_paths:
+    - "#{Ceedling.load_path}"
+  :enabled:
+    - stdout_pretty_tests_report
+    - gcov
+:gcov:
+  :abort_on_uncovered: true
+  :utilities:
+    - gcovr
+  :reports:
+    - HtmlDetailed
+  :uncovered_ignore_list:
+    - app/main.c #
+    - Autosar/Canif/**
+    - Autosar/Det/**
+    - Autosar/EcuM/**
+    - Autosar/Mcal/**
+    - Autosar/Os/**
+    - Autosar/Rte/**
+    - Rtt/**
+    - Build/**
+:cmock:
+  :mock_prefix: mock_
+  :treat_externs: :include
+  :when_no_prototypes: :warn
+  :enforce_strict_ordering: TRUE
+  :plugins:
+  :treat_as:
+    uint8: HEX8
+    uint16: HEX16
+    uint32: UINT32
+    int8: INT8
+    bool: UINT8
+

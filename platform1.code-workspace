@@ -1,0 +1,51 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../btn_mouseStateMachine"
+		},
+		{
+			"path": "../../ADC"
+		},
+		{
+			"path": "../../Pwm/buzzer"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"bfx_8bits.h": "c",
+			"stdint.h": "c",
+			"stdio.h": "c",
+			"bfx.h": "c",
+			"queue.h": "c",
+			"osif_archcfg.h": "c",
+			"stddef.h": "c",
+			"stdbool.h": "c",
+			"scheduler_cfg.h": "c",
+			"scheduler.h": "c",
+			"hwioab_0_buttons.h": "c",
+			"port.h": "c",
+			"port_cfg.h": "c",
+			"std_types.h": "c",
+			"hwioab_buttons_cfg.h": "c",
+			"mcu.h": "c",
+			"dio.h": "c",
+			"dio_ipw.h": "c",
+			"platform.h": "c",
+			"hwioab_1_leds.h": "c",
+			"hwioab_2_pots.h": "c",
+			"adc.h": "c",
+			"pdb_adc_ip_types.h": "c",
+			"port_ci_port_ip.h": "c",
+			"adc_cfgdefines.h": "c",
+			"adc_ipw_types.h": "c",
+			"adc_types.h": "c",
+			"hwioab_3_buzzer.h": "c",
+			"pwm.h": "c",
+			"gpt.h": "c",
+			"segger_rtt.h": "c"
+		}
+	}
+}

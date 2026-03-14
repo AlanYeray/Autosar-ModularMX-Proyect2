@@ -1,0 +1,9 @@
+Autosar/Os/src/scheduler.c:52:6:Scheduler_Init	24	static
+Autosar/Os/src/scheduler.c:95:6:Scheduler_MainFunction	16	static
+Autosar/Os/src/scheduler.c:161:16:Scheduler_StopTask	16	static
+Autosar/Os/src/scheduler.c:183:16:Scheduler_StartTask	16	static
+Autosar/Os/src/scheduler.c:206:16:Scheduler_periodTask	8	static
+Autosar/Os/src/scheduler.c:228:10:Scheduler_GetTimer	16	static
+Autosar/Os/src/scheduler.c:247:16:Scheduler_ReloadTimer	16	static
+Autosar/Os/src/scheduler.c:264:16:Scheduler_StartTimer	16	static
+Autosar/Os/src/scheduler.c:288:16:Scheduler_StopTimer	16	static

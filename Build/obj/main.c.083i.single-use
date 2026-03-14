@@ -1,0 +1,215 @@
+Delay (uint32 ms)
+{
+  uint32 ElapsedTime;
+  uint32 SeedTick;
+  uint32 Timeout;
+  long unsigned int D.8839;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _13;
+
+  <bb 2> :
+  _1 = ms_5(D) * 1000;
+  Timeout_8 = OsIf_MicrosToTicks (_1, 1);
+  _2 = OsIf_GetCounter (1);
+  SeedTick = _2;
+  ElapsedTime_11 = 0;
+
+  <bb 3> :
+  # ElapsedTime_3 = PHI <ElapsedTime_11(2), ElapsedTime_14(3)>
+  _13 = OsIf_GetElapsed (&SeedTick, 1);
+  ElapsedTime_14 = _13 + ElapsedTime_3;
+  if (ElapsedTime_14 < Timeout_8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  SeedTick ={v} {CLOBBER};
+  return;
+
+}
+
+
+callback_timer ()
+{
+  <bb 2> :
+  SEGGER_RTT_printf (0, "timer 300ms done \n");
+  return;
+
+}
+
+
+Os_Task_leds ()
+{
+  uint16 dataAdc1;
+  uint16 dataAdc[2];
+  uint8 buttonEvent;
+  uint8 i;
+  int _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  int _5;
+  unsigned char _6;
+  short unsigned int _7;
+  int _8;
+  int _9;
+  unsigned char _10;
+  short unsigned int dataAdc1.0_11;
+  int _12;
+  int _13;
+  unsigned char _14;
+  short unsigned int _15;
+  unsigned char _16;
+  int _17;
+  unsigned char _18;
+  short unsigned int _19;
+  unsigned char i.1_20;
+
+  <bb 2> :
+  i_25 = 0;
+  goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_21;
+  _2 = stBtnMachine[_1].Button;
+  buttonEvent_28 = HwIoAb_Buttons_GetEvent (_2);
+  if (buttonEvent_28 == 4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = (int) i_21;
+  _4 = stBtnMachine[_3].Led;
+  HwIoAb_Leds_TurnToggle (_4);
+  goto <bb 15>; [INV]
+
+  <bb 5> :
+  if (buttonEvent_28 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _5 = (int) i_21;
+  _6 = stBtnMachine[_5].Button;
+  if (_6 == 140)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  HwIoAb_Pots_GetValue (&dataAdc);
+  _7 = dataAdc[1];
+  _8 = (int) _7;
+  SEGGER_RTT_printf (0, "Adc0 value: %d \n", _8);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  _9 = (int) i_21;
+  _10 = stBtnMachine[_9].Button;
+  if (_10 == 113)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  HwIoAb_Pots_GetAltValue (&dataAdc1);
+  dataAdc1.0_11 = dataAdc1;
+  _12 = (int) dataAdc1.0_11;
+  SEGGER_RTT_printf (0, "Adc1 value: %d \n", _12);
+
+  <bb 10> :
+  dataAdc ={v} {CLOBBER};
+  dataAdc1 ={v} {CLOBBER};
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  if (buttonEvent_28 == 3)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 12> :
+  _13 = (int) i_21;
+  _14 = stBtnMachine[_13].Button;
+  _15 = (short unsigned int) _14;
+  _16 = Dio_ReadChannel (_15);
+  if (_16 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  HwIoAb_Buzzer_Stop ();
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  _17 = (int) i_21;
+  _18 = BuzzerControl[_17].tone;
+  _19 = (short unsigned int) _18;
+  HwIoAb_Buzzer_Beep (_19);
+
+  <bb 15> :
+  i.1_20 = i_21;
+  i_39 = i.1_20 + 1;
+
+  <bb 16> :
+  # i_21 = PHI <i_25(2), i_39(15)>
+  if (i_21 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  return;
+
+}
+
+
+Os_10ms_Task ()
+{
+  <bb 2> :
+  HwIoAb_Buttons_MainFunction ();
+  return;
+
+}
+
+
+EcuM_Init ()
+{
+  <bb 2> :
+  Mcu_Init (&Mcu_Config);
+  Mcu_InitClock (0);
+  Mcu_SetMode (0);
+  Platform_Init (0B);
+  Gpt_Init (&Gpt_Config);
+  OsIf_Init (0B);
+  Port_Init (&Port_Config);
+  Adc_Init (&Adc_Config);
+  Pwm_Init (&Pwm_Config);
+  IoHwAb_Init0 (0B);
+  return;
+
+}
+
+
+main ()
+{
+  int D.8821;
+
+  <bb 2> :
+  EcuM_Init ();
+  SEGGER_RTT_Init ();
+  Scheduler_Init (&Scheduler_Config);
+  Port_Init (0B);
+  Scheduler_MainFunction ();
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+}
+
+

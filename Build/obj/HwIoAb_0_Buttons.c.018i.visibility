@@ -1,0 +1,375 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_GetEvent/4 HwIoAb_Buttons_Init/3
+
+
+Marking externally visible variables: stBtnMachine/2 GeneralControl/1
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+HwIoAb_Buzzer_Stop/7 (HwIoAb_Buzzer_Stop) @069eaee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+Dio_ReadChannel/6 (Dio_ReadChannel) @069ead20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 HwIoAb_Buttons_MainFunction/5 
+  Calls: 
+HwIoAb_Buttons_MainFunction/5 (HwIoAb_Buttons_MainFunction) @069ea460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/2 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (read) GeneralControl/1 (write) GeneralControl/1 (read) stBtnMachine/2 (read) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (read) GeneralControl/1 (write) stBtnMachine/2 (write) GeneralControl/1 (write) stBtnMachine/2 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwIoAb_Buzzer_Stop/7 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 Dio_ReadChannel/6 
+HwIoAb_Buttons_GetEvent/4 (HwIoAb_Buttons_GetEvent) @069ea000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: GeneralControl/1 (read) GeneralControl/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+HwIoAb_Buttons_Init/3 (HwIoAb_Buttons_Init) @069e1620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: stBtnMachine/2 (write) stBtnMachine/2 (write) GeneralControl/1 (write) GeneralControl/1 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) stBtnMachine/2 (write) HwIoAb_Ptr/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+stBtnMachine/2 (stBtnMachine) @069dff78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: available
+  Varpool flags:
+GeneralControl/1 (GeneralControl) @069dff30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_Init/3 (write) HwIoAb_Buttons_GetEvent/4 (read) HwIoAb_Buttons_GetEvent/4 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (read) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) HwIoAb_Buttons_MainFunction/5 (write) 
+  Availability: available
+  Varpool flags:
+HwIoAb_Ptr/0 (HwIoAb_Ptr) @069dfea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: HwIoAb_Buttons_Init/3 (write) 
+  Availability: available
+  Varpool flags: initialized
+HwIoAb_Buttons_MainFunction ()
+{
+  uint8_t i;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 27>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  _2 = stBtnMachine[_1].State;
+  _3 = (int) _2;
+  switch (_3) <default: <L25> [INV], case 0: <L1> [INV], case 1: <L4> [INV], case 2: <L16> [INV], case 3: <L22> [INV], case 4: <L10> [INV]>
+
+  <bb 4> :
+<L1>:
+  _4 = (int) i;
+  _5 = stBtnMachine[_4].Button;
+  _6 = (short unsigned int) _5;
+  _7 = Dio_ReadChannel (_6);
+  if (_7 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = (int) i;
+  stBtnMachine[_8].State = 1;
+  _9 = (int) i;
+  GeneralControl[_9].Event = 1;
+  _10 = (int) i;
+  GeneralControl[_10].Counter = 0;
+
+  <bb 6> :
+  goto <bb 26>; [INV]
+
+  <bb 7> :
+<L4>:
+  _11 = (int) i;
+  _12 = GeneralControl[_11].Counter;
+  _13 = (int) i;
+  _14 = _12 + 10;
+  GeneralControl[_13].Counter = _14;
+  _15 = (int) i;
+  _16 = GeneralControl[_15].Counter;
+  _17 = (int) i;
+  _18 = stBtnMachine[_17].Timer;
+  if (_16 >= _18)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _19 = (int) i;
+  stBtnMachine[_19].State = 3;
+  _20 = (int) i;
+  GeneralControl[_20].Event = 3;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  _21 = (int) i;
+  _22 = stBtnMachine[_21].Button;
+  _23 = (short unsigned int) _22;
+  _24 = Dio_ReadChannel (_23);
+  if (_24 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _25 = (int) i;
+  stBtnMachine[_25].State = 4;
+  _26 = (int) i;
+  GeneralControl[_26].Event = 4;
+
+  <bb 11> :
+  goto <bb 26>; [INV]
+
+  <bb 12> :
+<L10>:
+  _27 = (int) i;
+  _28 = GeneralControl[_27].Counter;
+  _29 = (int) i;
+  _30 = _28 + 10;
+  GeneralControl[_29].Counter = _30;
+  _31 = (int) i;
+  _32 = GeneralControl[_31].Counter;
+  _33 = (int) i;
+  _34 = stBtnMachine[_33].Timer;
+  if (_32 >= _34)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _35 = (int) i;
+  GeneralControl[_35].Event = 0;
+  _36 = (int) i;
+  stBtnMachine[_36].State = 0;
+  goto <bb 16>; [INV]
+
+  <bb 14> :
+  _37 = (int) i;
+  _38 = stBtnMachine[_37].Button;
+  _39 = (short unsigned int) _38;
+  _40 = Dio_ReadChannel (_39);
+  if (_40 == 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _41 = (int) i;
+  stBtnMachine[_41].State = 2;
+  _42 = (int) i;
+  GeneralControl[_42].Event = 2;
+
+  <bb 16> :
+  goto <bb 26>; [INV]
+
+  <bb 17> :
+<L16>:
+  _43 = (int) i;
+  _44 = GeneralControl[_43].Counter;
+  _45 = (int) i;
+  _46 = _44 + 10;
+  GeneralControl[_45].Counter = _46;
+  _47 = (int) i;
+  _48 = GeneralControl[_47].Counter;
+  _49 = (int) i;
+  _50 = stBtnMachine[_49].Timer;
+  if (_48 >= _50)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  _51 = (int) i;
+  stBtnMachine[_51].State = 3;
+  _52 = (int) i;
+  GeneralControl[_52].Event = 3;
+  goto <bb 21>; [INV]
+
+  <bb 19> :
+  _53 = (int) i;
+  _54 = stBtnMachine[_53].Button;
+  _55 = (short unsigned int) _54;
+  _56 = Dio_ReadChannel (_55);
+  if (_56 == 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  _57 = (int) i;
+  GeneralControl[_57].Event = 2;
+  _58 = (int) i;
+  stBtnMachine[_58].State = 0;
+
+  <bb 21> :
+  goto <bb 26>; [INV]
+
+  <bb 22> :
+<L22>:
+  _59 = (int) i;
+  _60 = stBtnMachine[_59].Button;
+  _61 = (short unsigned int) _60;
+  _62 = Dio_ReadChannel (_61);
+  if (_62 == 1)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _63 = (int) i;
+  GeneralControl[_63].Event = 0;
+  _64 = (int) i;
+  stBtnMachine[_64].State = 0;
+  HwIoAb_Buzzer_Stop ();
+
+  <bb 24> :
+  goto <bb 26>; [INV]
+
+  <bb 25> :
+<L25>:
+  _65 = (int) i;
+  GeneralControl[_65].Event = 0;
+  _66 = (int) i;
+  stBtnMachine[_66].State = 0;
+
+  <bb 26> :
+  i.1_67 = i;
+  i = i.1_67 + 1;
+
+  <bb 27> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 28> :
+  return;
+
+}
+
+
+HwIoAb_Buttons_GetEvent (uint8 Button)
+{
+  uint8 aux;
+  uint8 aux_event;
+  uint8 D.5523;
+
+  <bb 2> :
+  if (Button == 140)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  aux = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  if (Button == 113)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  aux = 1;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (Button == 12)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  aux = 2;
+
+  <bb 8> :
+  _1 = (int) aux;
+  aux_event = GeneralControl[_1].Event;
+  _2 = (int) aux;
+  GeneralControl[_2].Event = 0;
+  D.5523 = aux_event;
+
+  <bb 9> :
+<L8>:
+  return D.5523;
+
+}
+
+
+HwIoAb_Buttons_Init (const struct HwIoAb_Buttons_Config * Buttons_Config)
+{
+  uint8 i;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) i;
+  stBtnMachine[_1].State = 0;
+  _2 = (int) i;
+  stBtnMachine[_2].Active = 0;
+  _3 = (int) i;
+  GeneralControl[_3].Event = 0;
+  _4 = (int) i;
+  GeneralControl[_4].Counter = 0;
+  i.0_5 = i;
+  i = i.0_5 + 1;
+
+  <bb 4> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  stBtnMachine[0].Button = 140;
+  stBtnMachine[1].Button = 113;
+  stBtnMachine[0].Timer = 300;
+  stBtnMachine[1].Timer = 300;
+  stBtnMachine[0].Led = 72;
+  stBtnMachine[1].Led = 73;
+  HwIoAb_Ptr = Buttons_Config;
+  return;
+
+}
+
+

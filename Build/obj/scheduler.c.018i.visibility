@@ -1,0 +1,514 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Scheduler_StopTimer/12 Scheduler_StartTimer/11 Scheduler_ReloadTimer/10 Scheduler_GetTimer/9 Scheduler_periodTask/8 Scheduler_StartTask/7 Scheduler_StopTask/6 Scheduler_MainFunction/5 Scheduler_Init/4
+
+
+Marking externally visible variables: timerBitField/1 taskBitField/0
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Bfx_ClrBit_u32u8/18 (Bfx_ClrBit_u32u8) @06998620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_StopTimer/12 Scheduler_StopTask/6 
+  Calls: 
+Bfx_GetBit_u32u8_u8/17 (Bfx_GetBit_u32u8_u8) @06998460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_GetTimer/9 Scheduler_StartTask/7 Scheduler_StopTask/6 Scheduler_MainFunction/5 
+  Calls: 
+OsIf_GetElapsed/16 (OsIf_GetElapsed) @069982a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_MainFunction/5 
+  Calls: 
+OsIf_MicrosToTicks/15 (OsIf_MicrosToTicks) @069981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_MainFunction/5 
+  Calls: 
+OsIf_GetCounter/14 (OsIf_GetCounter) @06993d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_Init/4 
+  Calls: 
+Bfx_SetBit_u32u8/13 (Bfx_SetBit_u32u8) @06993a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Scheduler_StartTimer/11 Scheduler_ReloadTimer/10 Scheduler_StartTask/7 Scheduler_Init/4 
+  Calls: 
+Scheduler_StopTimer/12 (Scheduler_StopTimer) @06993ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: timerBitField/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_ClrBit_u32u8/18 
+Scheduler_StartTimer/11 (Scheduler_StartTimer) @06993c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: timerBitField/1 (addr) SchedulerControl/3 (read) SchedulerControl/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_SetBit_u32u8/13 
+Scheduler_ReloadTimer/10 (Scheduler_ReloadTimer) @069939a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SchedulerControl/3 (write) SchedulerControl/3 (write) timerBitField/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_SetBit_u32u8/13 
+Scheduler_GetTimer/9 (Scheduler_GetTimer) @06993700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: timerBitField/1 (read) SchedulerControl/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_GetBit_u32u8_u8/17 
+Scheduler_periodTask/8 (Scheduler_periodTask) @06993460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SchedulerLocal/2 (read) SchedulerLocal/2 (read) SchedulerControl/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Scheduler_StartTask/7 (Scheduler_StartTask) @069931c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: taskBitField/0 (read) taskBitField/0 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_SetBit_u32u8/13 Bfx_GetBit_u32u8_u8/17 
+Scheduler_StopTask/6 (Scheduler_StopTask) @0698bd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: taskBitField/0 (read) taskBitField/0 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_ClrBit_u32u8/18 Bfx_GetBit_u32u8_u8/17 
+Scheduler_MainFunction/5 (Scheduler_MainFunction) @0698bee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SchedulerControl/3 (write) SchedulerControl/3 (addr) SchedulerControl/3 (read) SchedulerControl/3 (write) SchedulerControl/3 (read) SchedulerControl/3 (read) SchedulerControl/3 (read) SchedulerLocal/2 (read) SchedulerControl/3 (write) taskBitField/0 (read) SchedulerControl/3 (read) SchedulerLocal/2 (read) SchedulerLocal/2 (read) SchedulerControl/3 (write) SchedulerControl/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Bfx_GetBit_u32u8_u8/17 OsIf_GetElapsed/16 OsIf_MicrosToTicks/15 
+   Indirect call Num speculative call targets: 0
+Scheduler_Init/4 (Scheduler_Init) @0698bc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SchedulerLocal/2 (write) taskBitField/0 (write) timerBitField/1 (write) taskBitField/0 (addr) SchedulerControl/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetCounter/14 Bfx_SetBit_u32u8/13 
+SchedulerControl/3 (SchedulerControl) @069ef558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Scheduler_Init/4 (write) Scheduler_MainFunction/5 (write) Scheduler_MainFunction/5 (addr) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (write) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (write) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (write) Scheduler_MainFunction/5 (write) Scheduler_periodTask/8 (write) Scheduler_GetTimer/9 (read) Scheduler_ReloadTimer/10 (write) Scheduler_ReloadTimer/10 (write) Scheduler_StartTimer/11 (read) Scheduler_StartTimer/11 (write) 
+  Availability: available
+  Varpool flags:
+SchedulerLocal/2 (SchedulerLocal) @069ef4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Scheduler_Init/4 (write) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (read) Scheduler_MainFunction/5 (read) Scheduler_periodTask/8 (read) Scheduler_periodTask/8 (read) 
+  Availability: available
+  Varpool flags: initialized
+timerBitField/1 (timerBitField) @069ef360
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Scheduler_Init/4 (write) Scheduler_GetTimer/9 (read) Scheduler_ReloadTimer/10 (addr) Scheduler_StartTimer/11 (addr) Scheduler_StopTimer/12 (addr) 
+  Availability: available
+  Varpool flags:
+taskBitField/0 (taskBitField) @069ef318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Scheduler_Init/4 (write) Scheduler_Init/4 (addr) Scheduler_MainFunction/5 (read) Scheduler_StopTask/6 (read) Scheduler_StopTask/6 (addr) Scheduler_StartTask/7 (read) Scheduler_StartTask/7 (addr) 
+  Availability: available
+  Varpool flags:
+Scheduler_StopTimer (TimerType timer)
+{
+  Std_ReturnType D.5663;
+
+  <bb 2> :
+  if (timer == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = timer + 255;
+  Bfx_ClrBit_u32u8 (&timerBitField, _1);
+  D.5663 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5663 = 0;
+
+  <bb 5> :
+<L2>:
+  return D.5663;
+
+}
+
+
+Scheduler_StartTimer (TimerType timer)
+{
+  Std_ReturnType D.5659;
+
+  <bb 2> :
+  if (timer == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = timer + 255;
+  Bfx_SetBit_u32u8 (&timerBitField, _1);
+  _2 = (int) timer;
+  _3 = _2 + -1;
+  _4 = (int) timer;
+  _5 = _4 + -1;
+  _6 = SchedulerControl.TimerTimeout[_3];
+  SchedulerControl.TimerCount[_5] = _6;
+  D.5659 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5659 = 0;
+
+  <bb 5> :
+<L2>:
+  return D.5659;
+
+}
+
+
+Scheduler_ReloadTimer (TimerType timer, uint32_t new_timeout)
+{
+  Std_ReturnType D.5655;
+
+  <bb 2> :
+  _1 = (int) timer;
+  _2 = _1 + -1;
+  SchedulerControl.TimerCount[_2] = new_timeout;
+  _3 = (int) timer;
+  _4 = _3 + -1;
+  SchedulerControl.TimerTimeout[_4] = new_timeout;
+  Bfx_SetBit_u32u8 (&timerBitField, timer);
+  D.5655 = 1;
+
+  <bb 3> :
+<L0>:
+  return D.5655;
+
+}
+
+
+Scheduler_GetTimer (TimerType timer)
+{
+  uint32_t D.5653;
+
+  <bb 2> :
+  timerBitField.18_1 = timerBitField;
+  _2 = timer + 255;
+  _3 = Bfx_GetBit_u32u8_u8 (timerBitField.18_1, _2);
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = (int) timer;
+  _5 = _4 + -1;
+  D.5653 = SchedulerControl.TimerCount[_5];
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5653 = 0;
+
+  <bb 5> :
+<L2>:
+  return D.5653;
+
+}
+
+
+Scheduler_periodTask (TaskType task, uint32_t period)
+{
+  Std_ReturnType D.5649;
+
+  <bb 2> :
+  SchedulerLocal.16_1 = SchedulerLocal;
+  _2 = SchedulerLocal.16_1->tick;
+  if (period >= _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  SchedulerLocal.17_3 = SchedulerLocal;
+  _4 = SchedulerLocal.17_3->tick;
+  _5 = period % _4;
+  if (_5 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _6 = (int) task;
+  _7 = _6 + -1;
+  SchedulerControl.TaskPeriod[_7] = period;
+  D.5649 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  D.5649 = 0;
+
+  <bb 6> :
+<L4>:
+  return D.5649;
+
+}
+
+
+Scheduler_StartTask (TaskType task)
+{
+  Std_ReturnType D.5643;
+
+  <bb 2> :
+  taskBitField.15_1 = taskBitField;
+  _2 = Bfx_GetBit_u32u8_u8 (taskBitField.15_1, task);
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Bfx_SetBit_u32u8 (&taskBitField, task);
+  D.5643 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5643 = 0;
+
+  <bb 5> :
+<L2>:
+  return D.5643;
+
+}
+
+
+Scheduler_StopTask (TaskType task)
+{
+  Std_ReturnType D.5639;
+
+  <bb 2> :
+  taskBitField.14_1 = taskBitField;
+  _2 = Bfx_GetBit_u32u8_u8 (taskBitField.14_1, task);
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Bfx_ClrBit_u32u8 (&taskBitField, task);
+  D.5639 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.5639 = 0;
+
+  <bb 5> :
+<L2>:
+  return D.5639;
+
+}
+
+
+Scheduler_MainFunction ()
+{
+  uint8_t i;
+  uint8_t i;
+  long unsigned int D.5626;
+
+  <bb 2> :
+  _1 = OsIf_MicrosToTicks (10000, 1);
+  SchedulerControl.timeoutMicros = _1;
+
+  <bb 3> :
+  D.5626 = OsIf_GetElapsed (&SchedulerControl.SeedTick, 1);
+  _2 = SchedulerControl.elapsedTime;
+  _3 = D.5626 + _2;
+  SchedulerControl.elapsedTime = _3;
+  _4 = SchedulerControl.elapsedTime;
+  _5 = SchedulerControl.timeoutMicros;
+  if (_4 >= _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  i = 0;
+
+  <bb 5> :
+  i = 0;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  _23 = (int) i;
+  _24 = SchedulerControl.TaskElapsed[_23];
+  SchedulerLocal.9_25 = SchedulerLocal;
+  _26 = SchedulerLocal.9_25->tick;
+  _27 = (int) i;
+  _28 = _24 + _26;
+  SchedulerControl.TaskElapsed[_27] = _28;
+  taskBitField.10_29 = taskBitField;
+  _30 = Bfx_GetBit_u32u8_u8 (taskBitField.10_29, i);
+  if (_30 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  _31 = (int) i;
+  _32 = SchedulerControl.TaskElapsed[_31];
+  SchedulerLocal.11_33 = SchedulerLocal;
+  _34 = SchedulerLocal.11_33->taskPtr;
+  _35 = (unsigned int) i;
+  _36 = _35 * 12;
+  _37 = _34 + _36;
+  _38 = _37->Initperiod;
+  if (_32 >= _38)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  SchedulerLocal.12_39 = SchedulerLocal;
+  _40 = SchedulerLocal.12_39->taskPtr;
+  _41 = (unsigned int) i;
+  _42 = _41 * 12;
+  _43 = _40 + _42;
+  _44 = _43->taskFunc;
+  _44 ();
+  _45 = (int) i;
+  SchedulerControl.TaskElapsed[_45] = 0;
+
+  <bb 9> :
+  SchedulerControl.elapsedTime = 0;
+
+  <bb 10> :
+  i.13_46 = i;
+  i = i.13_46 + 1;
+
+  <bb 11> :
+  if (i <= 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  goto <bb 3>; [INV]
+
+}
+
+
+Scheduler_Init (const struct Scheduler_ConfigType * scheduler)
+{
+  uint8_t i;
+  uint8_t i;
+  uint8_t i;
+
+  <bb 2> :
+  SchedulerLocal = scheduler;
+  taskBitField = 0;
+  timerBitField = 0;
+  i = 0;
+
+  <bb 3> :
+
+  <bb 4> :
+  i = 0;
+
+  <bb 5> :
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Bfx_SetBit_u32u8 (&taskBitField, i);
+  i.4_17 = i;
+  i = i.4_17 + 1;
+
+  <bb 7> :
+  if (i <= 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  _18 = OsIf_GetCounter (1);
+  SchedulerControl.SeedTick = _18;
+  return;
+
+}
+
+

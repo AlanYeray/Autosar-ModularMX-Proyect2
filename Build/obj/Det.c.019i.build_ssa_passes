@@ -1,0 +1,357 @@
+Det_Start ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+Det_ReportTransientFault (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 FaultId)
+{
+  uint32 u32CoreId;
+  Std_ReturnType D.6413;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_TransientModuleId[u32CoreId] = ModuleId;
+  Det_TransientInstanceId[u32CoreId] = InstanceId;
+  Det_TransientApiId[u32CoreId] = ApiId;
+  Det_TransientFaultId[u32CoreId] = FaultId;
+  D.6413 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6413;
+
+}
+
+
+Det_ReportRuntimeError (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+{
+  uint32 u32CoreId;
+  Std_ReturnType D.6411;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_RuntimeModuleId[u32CoreId] = ModuleId;
+  Det_RuntimeInstanceId[u32CoreId] = InstanceId;
+  Det_RuntimeApiId[u32CoreId] = ApiId;
+  Det_RuntimeErrorId[u32CoreId] = ErrorId;
+  D.6411 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6411;
+
+}
+
+
+Det_ReportError (uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+{
+  const char * errorStr;
+  const char * apiStr;
+  const char * instanceStr;
+  const char * moduleStr;
+  uint32 u32CoreId;
+  Std_ReturnType D.6409;
+
+  <bb 2> :
+  _1 = Sys_GetCoreID ();
+  u32CoreId = (uint32) _1;
+  Det_ModuleId[u32CoreId] = ModuleId;
+  Det_InstanceId[u32CoreId] = InstanceId;
+  Det_ApiId[u32CoreId] = ApiId;
+  Det_ErrorId[u32CoreId] = ErrorId;
+  moduleStr = getModuleString (ModuleId);
+  _2 = (short unsigned int) InstanceId;
+  instanceStr = getInstanceString (ModuleId, _2);
+  _3 = (short unsigned int) ApiId;
+  apiStr = getApiString (_3, ModuleId);
+  _4 = (short unsigned int) ApiId;
+  _5 = (short unsigned int) ErrorId;
+  errorStr = getErrorString (_4, _5, ModuleId);
+  SEGGER_RTT_printf (0, "Report Error: %s | %s in function: %s with the error %s\n", moduleStr, instanceStr, apiStr, errorStr);
+  D.6409 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6409;
+
+}
+
+
+getErrorString (uint16_t ApiId, uint16_t ErrorId, uint16_t ModuleId)
+{
+  int i;
+  int i;
+  const char * D.6400;
+
+  <bb 2> :
+  if (ModuleId == 120)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  i = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  _1 = Dio_Det_Handler_dinamic[i].ApiId;
+  _2 = (short unsigned int) _1;
+  if (ApiId == _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  _3 = Dio_Det_Handler_dinamic[i].ErrorId;
+  _4 = (short unsigned int) _3;
+  if (ErrorId == _4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  D.6400 = Dio_Det_Handler_dinamic[i].cError;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 17>; [INV]
+
+  <bb 7> :
+  i = i + 1;
+
+  <bb 8> :
+  if (i <= 28)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 9> :
+  if (ModuleId == 124)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 10> :
+  i = 0;
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  _5 = Port_Det_Handler_dinamic[i].ApiId;
+  _6 = (short unsigned int) _5;
+  if (ApiId == _6)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  _7 = Port_Det_Handler_dinamic[i].ErrorId;
+  _8 = (short unsigned int) _7;
+  if (ErrorId == _8)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  D.6400 = Port_Det_Handler_dinamic[i].cError;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  i = i + 1;
+
+  <bb 15> :
+  if (i <= 16)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 16> :
+  D.6400 = "Unknown Error";
+
+  <bb 17> :
+<L19>:
+  return D.6400;
+
+}
+
+
+getApiString (uint16_t ApiId, uint16_t ModuleId)
+{
+  int i;
+  int i;
+  const char * D.6387;
+
+  <bb 2> :
+  if (ModuleId == 120)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _1 = Dio_Det_Handler_dinamic[i].ApiId;
+  _2 = (short unsigned int) _1;
+  if (ApiId == _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  D.6387 = Dio_Det_Handler_dinamic[i].cApi;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 15>; [INV]
+
+  <bb 6> :
+  i = i + 1;
+
+  <bb 7> :
+  if (i <= 28)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 8> :
+  if (ModuleId == 124)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 9> :
+  i = 0;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  _3 = Port_Det_Handler_dinamic[i].ApiId;
+  _4 = (short unsigned int) _3;
+  if (ApiId == _4)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  D.6387 = Port_Det_Handler_dinamic[i].cApi;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  i = i + 1;
+
+  <bb 13> :
+  if (i <= 16)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  D.6387 = "Unknown API";
+
+  <bb 15> :
+<L15>:
+  return D.6387;
+
+}
+
+
+getInstanceString (uint16_t ModuleId, uint16_t InstanceId)
+{
+  int i;
+  const char * D.6381;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = Det_Handler_static[i].ModuleId;
+  if (ModuleId == _1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _2 = Det_Handler_static[i].InstanceId;
+  _3 = (short unsigned int) _2;
+  if (InstanceId == _3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  D.6381 = Det_Handler_static[i].cInstance;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  i = i + 1;
+
+  <bb 7> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  D.6381 = "Unknown Instance";
+
+  <bb 9> :
+<L7>:
+  return D.6381;
+
+}
+
+
+getModuleString (uint16_t ModuleId)
+{
+  int i;
+  const char * D.6375;
+
+  <bb 2> :
+  i = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Det_Handler_static[i].ModuleId;
+  if (ModuleId == _1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.6375 = Det_Handler_static[i].cModule;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  i = i + 1;
+
+  <bb 6> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  D.6375 = "Unknown Module";
+
+  <bb 8> :
+<L5>:
+  return D.6375;
+
+}
+
+
+Det_Init ()
+{
+  <bb 2> :
+  SEGGER_RTT_printf (0, "Det Init Ready\n");
+  return;
+
+}
+
+
