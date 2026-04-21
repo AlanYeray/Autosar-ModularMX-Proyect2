@@ -2,6 +2,14 @@
 
 Implementacion modular del stack de Basic Software (BSW) bajo el estandar AUTOSAR 4.7 RTD 2.0.0, orientada al microcontrolador NXP S32K144 (ARM Cortex-M4). El proyecto sirve como referencia practica para el desarrollo de firmware embebido en el ecosistema automotriz, integrando drivers MCAL, capas de abstraccion de hardware y un scheduler cooperativo custom.
 
+### Problema
+Los sistemas embebidos frecuentemente necesitan ejecutar múltiples tareas de forma concurrente sin un sistema operativo completo, lo que complica la organización y el tiempo de ejecución del firmware.
+### Solución
+Scheduler de tareas desarrollado desde cero en C, inspirado en el modelo AUTOSAR OS, que gestiona múltiples tareas usando un algoritmo Round Robin sobre el NXP S32K144.
+### Resultado
+Permite ejecutar tareas periódicas de forma ordenada y predecible sin necesidad de un RTOS completo, reduciendo la complejidad del firmware en aplicaciones embebidas.
+
+
 ## Caracteristicas principales
 
 El proyecto implementa una arquitectura AUTOSAR completa que incluye la capa MCAL con drivers para ADC, DIO, GPT, PWM, Port, Mcu, SPI, CAN y Platform. Sobre esta capa se construye una abstraccion de hardware (IoHwAb) que expone interfaces de alto nivel para botones con deteccion de single-click, double-click y hold, LEDs con control de toggle, potenciometros via ADC y un buzzer controlado por PWM.
